@@ -6,6 +6,7 @@ import App from '@/components/band/App';
 import Link from 'next/link';
 import styles from '../css/Home.module.css';
 import { FaEnvelope, FaWhatsapp, FaLinkedin, FaGithub } from 'react-icons/fa';
+import StyledComponentsIcon from '../public/assets/icons/styled_components.js';
 import {
   SiJavascript,
   SiTypescript,
@@ -25,7 +26,6 @@ import {
   SiFigma,
   SiTailwindcss,
 } from 'react-icons/si';
-import StyledComponentsIcon from '../public/assets/icons/styled_components.js';
 
 export default function Home() {
   const [isMenuOpen, setIsMenuOpen] = useState(false);
