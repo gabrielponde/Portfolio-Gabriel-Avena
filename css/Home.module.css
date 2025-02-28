@@ -257,26 +257,13 @@
   color: #0037ff;
 }
 
-.tooltip {
-  visibility: hidden;
-  width: 200px;
-  background-color: #333;
-  color: #fff;
-  text-align: center;
+.skillInfo {
+  margin-top: 20px;
+  padding: 10px;
   border-radius: 5px;
-  padding: 8px;
-  position: absolute;
-  z-index: 1;
-  bottom: 125%;
-  left: 50%;
-  transform: translateX(-50%);
-  opacity: 0;
-  transition: opacity 0.3s ease;
-}
-
-.skillItem:hover .tooltip {
-  visibility: visible;
-  opacity: 1;
+  text-align: center;
+  font-size: 1.1rem;
+  color: rgb(122, 122, 122);
 }
 
 .projectsGrid {

@@ -28,15 +28,24 @@ import {
 } from 'react-icons/si';
 
 export default function Home() {
-  const [isMenuOpen, setIsMenuOpen] = useState(false);
-  const [isClient, setIsClient] = useState(false); 
+  const [isMenuOpen, setIsMenuOpen] = useState<boolean>(false);
+  const [isClient, setIsClient] = useState<boolean>(false);
+  const [skillInfo, setSkillInfo] = useState<string | null>(null); // Estado para armazenar a informação da skill
 
   useEffect(() => {
-    setIsClient(true); 
+    setIsClient(true);
   }, []);
 
   const toggleMenu = () => {
     setIsMenuOpen(!isMenuOpen);
+  };
+
+  const handleSkillHover = (info: string) => {
+    setSkillInfo(info);
+  };
+
+  const handleSkillLeave = () => {
+    setSkillInfo(null);
   };
 
   return (
@@ -107,7 +116,7 @@ export default function Home() {
                     .callFunction(() => {
                       const cursor = document.querySelector('.Typewriter__cursor');
                       if (cursor) {
-                        cursor.classList.add('blinking-cursor'); 
+                        cursor.classList.add('blinking-cursor');
                       }
                     })
                     .start();
@@ -161,132 +170,189 @@ export default function Home() {
           <h2 className={styles.sectionTitle}>
             Conhecimentos
           </h2>
+          {/* Área para exibir as informações da skill */}
+          <div className={styles.skillInfo}>
+            {skillInfo && <p>{skillInfo}</p>}
+          </div>
           <div className={styles.skillsGrid}>
-
             {/* JavaScript */}
-            <div className={styles.skillItem}>
+            <div
+              className={styles.skillItem}
+              onMouseEnter={() => handleSkillHover('Linguagem de programação para desenvolvimento web.')}
+              onMouseLeave={handleSkillLeave}
+            >
               <SiJavascript size={40} />
               <span>JavaScript</span>
-              <div className={styles.tooltip}>Linguagem de programação para desenvolvimento web.</div>
             </div>
 
             {/* TypeScript */}
-            <div className={styles.skillItem}>
+            <div
+              className={styles.skillItem}
+              onMouseEnter={() => handleSkillHover('Superset de JavaScript com tipagem estática.')}
+              onMouseLeave={handleSkillLeave}
+            >
               <SiTypescript size={40} />
               <span>TypeScript</span>
-              <div className={styles.tooltip}>Superset de JavaScript com tipagem estática.</div>
             </div>
 
             {/* Node.js */}
-            <div className={styles.skillItem}>
+            <div
+              className={styles.skillItem}
+              onMouseEnter={() => handleSkillHover('Ambiente de execução para JavaScript no back-end.')}
+              onMouseLeave={handleSkillLeave}
+            >
               <SiNodedotjs size={40} />
               <span>Node.js</span>
-              <div className={styles.tooltip}>Ambiente de execução para JavaScript no back-end.</div>
             </div>
 
             {/* React */}
-            <div className={styles.skillItem}>
+            <div
+              className={styles.skillItem}
+              onMouseEnter={() => handleSkillHover('Biblioteca JavaScript para construção de interfaces de usuário.')}
+              onMouseLeave={handleSkillLeave}
+            >
               <SiReact size={40} />
               <span>React</span>
-              <div className={styles.tooltip}>Biblioteca JavaScript para construção de interfaces de usuário.</div>
             </div>
 
             {/* PostgreSQL */}
-            <div className={styles.skillItem}>
+            <div
+              className={styles.skillItem}
+              onMouseEnter={() => handleSkillHover('Banco de dados relacional de código aberto.')}
+              onMouseLeave={handleSkillLeave}
+            >
               <SiPostgresql size={40} />
               <span>PostgreSQL</span>
-              <div className={styles.tooltip}>Banco de dados relacional de código aberto.</div>
             </div>
 
             {/* Next.js */}
-            <div className={styles.skillItem}>
+            <div
+              className={styles.skillItem}
+              onMouseEnter={() => handleSkillHover('Framework React para renderização do lado do servidor e geração de sites estáticos.')}
+              onMouseLeave={handleSkillLeave}
+            >
               <SiNextdotjs size={40} />
               <span>Next.js</span>
-              <div className={styles.tooltip}>Framework React para renderização do lado do servidor e geração de sites estáticos.</div>
             </div>
 
             {/* Vite */}
-            <div className={styles.skillItem}>
+            <div
+              className={styles.skillItem}
+              onMouseEnter={() => handleSkillHover('Ferramenta de build rápida para desenvolvimento front-end.')}
+              onMouseLeave={handleSkillLeave}
+            >
               <SiVite size={40} />
               <span>Vite</span>
-              <div className={styles.tooltip}>Ferramenta de build rápida para desenvolvimento front-end.</div>
             </div>
 
             {/* Cypress */}
-            <div className={styles.skillItem}>
+            <div
+              className={styles.skillItem}
+              onMouseEnter={() => handleSkillHover('Ferramenta de teste end-to-end para aplicações web.')}
+              onMouseLeave={handleSkillLeave}
+            >
               <SiCypress size={40} />
               <span>Cypress</span>
-              <div className={styles.tooltip}>Ferramenta de teste end-to-end para aplicações web.</div>
             </div>
 
             {/* Jest */}
-            <div className={styles.skillItem}>
+            <div
+              className={styles.skillItem}
+              onMouseEnter={() => handleSkillHover('Framework de testes para JavaScript.')}
+              onMouseLeave={handleSkillLeave}
+            >
               <SiJest size={40} />
               <span>Jest</span>
-              <div className={styles.tooltip}>Framework de testes para JavaScript.</div>
             </div>
 
             {/* Sass */}
-            <div className={styles.skillItem}>
+            <div
+              className={styles.skillItem}
+              onMouseEnter={() => handleSkillHover('Pré-processador CSS para estilos mais eficientes.')}
+              onMouseLeave={handleSkillLeave}
+            >
               <SiSass size={40} />
               <span>Sass</span>
-              <div className={styles.tooltip}>Pré-processador CSS para estilos mais eficientes.</div>
             </div>
 
             {/* Tailwind CSS */}
-            <div className={styles.skillItem}>
+            <div
+              className={styles.skillItem}
+              onMouseEnter={() => handleSkillHover('Framework CSS utilitário para criação de designs responsivos.')}
+              onMouseLeave={handleSkillLeave}
+            >
               <SiTailwindcss size={40} />
               <span>Tailwind CSS</span>
-              <div className={styles.tooltip}>Framework CSS utilitário para criação de designs responsivos.</div>
             </div>
 
             {/* Styled Components */}
-            <div className={styles.skillItem}>
-              <StyledComponentsIcon /> 
+            <div
+              className={styles.skillItem}
+              onMouseEnter={() => handleSkillHover('Biblioteca para estilização de componentes React com CSS-in-JS.')}
+              onMouseLeave={handleSkillLeave}
+            >
+              <StyledComponentsIcon />
               <span>Styled Components</span>
-              <div className={styles.tooltip}>Biblioteca para estilização de componentes React com CSS-in-JS.</div>
             </div>
 
             {/* HTML */}
-            <div className={styles.skillItem}>
+            <div
+              className={styles.skillItem}
+              onMouseEnter={() => handleSkillHover('Linguagem de marcação para estruturar páginas web.')}
+              onMouseLeave={handleSkillLeave}
+            >
               <SiHtml5 size={40} />
               <span>HTML</span>
-              <div className={styles.tooltip}>Linguagem de marcação para estruturar páginas web.</div>
             </div>
 
             {/* CSS */}
-            <div className={styles.skillItem}>
+            <div
+              className={styles.skillItem}
+              onMouseEnter={() => handleSkillHover('Linguagem de estilo para design de páginas web.')}
+              onMouseLeave={handleSkillLeave}
+            >
               <SiCss3 size={40} />
               <span>CSS</span>
-              <div className={styles.tooltip}>Linguagem de estilo para design de páginas web.</div>
             </div>
 
             {/* Git */}
-            <div className={styles.skillItem}>
+            <div
+              className={styles.skillItem}
+              onMouseEnter={() => handleSkillHover('Sistema de controle de versão para gerenciamento de código.')}
+              onMouseLeave={handleSkillLeave}
+            >
               <SiGit size={40} />
               <span>Git</span>
-              <div className={styles.tooltip}>Sistema de controle de versão para gerenciamento de código.</div>
             </div>
 
             {/* GitHub */}
-            <div className={styles.skillItem}>
+            <div
+              className={styles.skillItem}
+              onMouseEnter={() => handleSkillHover('Plataforma de hospedagem de código e colaboração.')}
+              onMouseLeave={handleSkillLeave}
+            >
               <SiGithub size={40} />
               <span>GitHub</span>
-              <div className={styles.tooltip}>Plataforma de hospedagem de código e colaboração.</div>
             </div>
 
             {/* Docker */}
-            <div className={styles.skillItem}>
+            <div
+              className={styles.skillItem}
+              onMouseEnter={() => handleSkillHover('Plataforma para criação e execução de contêineres.')}
+              onMouseLeave={handleSkillLeave}
+            >
               <SiDocker size={40} />
               <span>Docker</span>
-              <div className={styles.tooltip}>Plataforma para criação e execução de contêineres.</div>
             </div>
 
             {/* Figma */}
-            <div className={styles.skillItem}>
+            <div
+              className={styles.skillItem}
+              onMouseEnter={() => handleSkillHover('Ferramenta de design de interfaces e prototipagem.')}
+              onMouseLeave={handleSkillLeave}
+            >
               <SiFigma size={40} />
               <span>Figma</span>
-              <div className={styles.tooltip}>Ferramenta de design de interfaces e prototipagem.</div>
             </div>
           </div>
         </div>
