@@ -36,10 +36,10 @@ export const frontendProjects: Project[] = [
     icons: [
       <icons.SiReact key="react" size={24} title="React" />,
       <icons.SiJavascript key="javascript" size={24} title="JavaScript" />,
-      <icons.SiTypescript key="sass" size={24} title="Typescript" />,
-      <icons.SiNextdotjs key="figma" size={24} title="NextJs" />,
-      <icons.SiPostgresql key="figma" size={24} title="Postgresql" />,
-      <icons.SiCss3 key="figma" size={24} title="Css3" />,
+      <icons.SiTypescript key="typescript" size={24} title="Typescript" />,
+      <icons.SiNextdotjs key="nextjs" size={24} title="NextJs" />,
+      <icons.SiPostgresql key="postgresql" size={24} title="Postgresql" />,
+      <icons.SiCss3 key="css3" size={24} title="Css3" />,
       <icons.SiFigma key="figma" size={24} title="Figma" />
     ],
   },
