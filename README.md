@@ -50,7 +50,7 @@ Se você quiser entrar em contato comigo para oportunidades de trabalho, colabor
 
 ## 🌐 Visite o Portfólio
 
-Você pode acessar meu portfólio online [aqui](https://seu-link-do-portfolio.com).
+Você pode acessar meu portfólio online [aqui](https://portfolio-gabriel-avena.vercel.app).
 
 ---
 

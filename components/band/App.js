@@ -1,4 +1,4 @@
-'use client';
+'use client'; 
 import '../../css/index.css'; 
 import * as THREE from 'three';
 import { useEffect, useRef, useState } from 'react';
