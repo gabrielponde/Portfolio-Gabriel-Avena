@@ -2,10 +2,10 @@
 import { motion } from 'framer-motion';
 import Typewriter from 'typewriter-effect';
 import { useState, useEffect } from 'react';
-import App from '@/components/band/App';
 import Link from 'next/link';
 import styles from '../css/Home.module.css';
 import { Project, frontendProjects, backendProjects, skills, contacts } from '../data/db';
+import App from '../components/band/App';
 
 export default function Home() {
   const [isMenuOpen, setIsMenuOpen] = useState<boolean>(false);
@@ -140,9 +140,7 @@ export default function Home() {
         viewport={{ once: false }}
       >
         <div className={styles.container}>
-          <h2 className={styles.sectionTitle}>
-            Sobre Mim
-          </h2>
+          <h2 className={styles.sectionTitle}>Sobre Mim</h2>
           <p className={styles.sectionText}>
             Desde cedo, minha paixão pela tecnologia moldou meu caminho profissional. Sempre fui fascinado por como a inovação transforma o mundo, e foi isso que me levou a seguir carreira na área. Sou desenvolvedor fullstack, formado em front-end e back-end pela Cubos Academy, onde desenvolvi projetos práticos que me permitiram construir aplicações completas, aplicar boas práticas e aprofundar meus conhecimentos. Além do conhecimento técnico, estou sempre aprimorando minhas habilidades por meio de estudos autônomos e cursos especializados. Tenho soft skills essenciais para o ambiente profissional, como trabalho em equipe, proatividade, organização e empenho. Busco desafios que me permitam crescer, aprender e contribuir com soluções inovadoras. Minhas principais habilidades incluem JavaScript e TypeScript, utilizando Node.js no back-end e React e Next.js no front-end. Tenho experiência com PostgreSQL para banco de dados, além de ferramentas como Vite, Sass e Docker. Também aplico testes automatizados com Jest e Cypress, e utilizo Git e GitHub para versionamento de código. Atualmente, meu objetivo é continuar evoluindo na área, contribuindo para projetos inovadores e desafiadores. Busco oportunidades que me permitam expandir meu conhecimento, colaborar em equipe e gerar impacto positivo por meio da tecnologia. Estou aberto a novos desafios e colaborações que impulsionem meu crescimento e me permitam fazer a diferença.
           </p>

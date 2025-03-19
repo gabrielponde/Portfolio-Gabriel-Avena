@@ -1,4 +1,5 @@
 import { icons } from '../icons';
+import React, { JSX } from 'react';
 
 export interface Project {
   id: number;
@@ -33,10 +34,10 @@ export const frontendProjects: Project[] = [
     repoLink: 'https://github.com/gabrielponde/Projeto-Cafeteria-Cubspresso',
     deployLink: 'https://cafeteria-cubspresso.vercel.app',
     icons: [
-      <icons.SiReact size={24} title="React" />,
-      <icons.SiJavascript size={24} title="JavaScript" />,
-      <icons.SiSass size={24} title="Sass" />,
-      <icons.SiFigma size={24} title="Figma" />,
+      <icons.SiReact key="react" size={24} title="React" />,
+      <icons.SiJavascript key="javascript" size={24} title="JavaScript" />,
+      <icons.SiSass key="sass" size={24} title="Sass" />,
+      <icons.SiFigma key="figma" size={24} title="Figma" />,
     ],
   },
   {
@@ -48,10 +49,10 @@ export const frontendProjects: Project[] = [
     repoLink: 'https://github.com/gabrielponde/Curso-IA-com-Python---LandingPage',
     deployLink: 'https://curso-ia-com-python-landing-page.vercel.app',
     icons: [
-      <icons.SiReact size={24} title="React" />,
-      <icons.SiJavascript size={24} title="JavaScript" />,
-      <icons.SiCss3 size={24} title="CSS" />,
-      <icons.SiFigma size={24} title="Figma" />,
+      <icons.SiReact key="react" size={24} title="React" />,
+      <icons.SiJavascript key="javascript" size={24} title="JavaScript" />,
+      <icons.SiCss3 key="css" size={24} title="CSS" />,
+      <icons.SiFigma key="figma" size={24} title="Figma" />,
     ],
   },
   {
@@ -63,10 +64,10 @@ export const frontendProjects: Project[] = [
     repoLink: 'https://github.com/gabrielponde/F1-Legends',
     deployLink: 'https://f1-legends.vercel.app',
     icons: [
-      <icons.SiHtml5 size={24} title="html" />,
-      <icons.SiJavascript size={24} title="JavaScript" />,
-      <icons.SiCss3 size={24} title="css" />,
-      <icons.SiFigma size={24} title="Figma" />,
+      <icons.SiHtml5 key="html" size={24} title="HTML" />,
+      <icons.SiJavascript key="javascript" size={24} title="JavaScript" />,
+      <icons.SiCss3 key="css" size={24} title="CSS" />,
+      <icons.SiFigma key="figma" size={24} title="Figma" />,
     ],
   },
 ];
