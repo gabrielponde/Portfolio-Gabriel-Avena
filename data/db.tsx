@@ -30,7 +30,7 @@ export const frontendProjects: Project[] = [
     title: 'Cafeteria Cubspresso',
     image: '/images/cafeteria-cubspresso.png',
     description:
-      'Este projeto é um catálogo online de cafés, desenvolvido com React. O objetivo é listar diferentes tipos de café, permitindo aos usuários visualizar informações detalhadas sobre cada um.',
+      'Este projeto é um catálogo online de cafés, desenvolvido com React. O objetivo é listar diferentes tipos de café, permitindo aos usuários visualizarem informações detalhadas sobre cada um.',
     repoLink: 'https://github.com/gabrielponde/Projeto-Cafeteria-Cubspresso',
     deployLink: 'https://cafeteria-cubspresso.vercel.app',
     icons: [
