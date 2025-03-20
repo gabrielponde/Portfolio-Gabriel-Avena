@@ -1,6 +1,6 @@
 'use client';
 import { motion } from 'framer-motion';
-import Typewriter from 'typewriter-effect';
+import { ReactTyped } from 'react-typed';
 import { useState, useEffect } from 'react';
 import Link from 'next/link';
 import styles from '../css/Home.module.css';
@@ -91,31 +91,21 @@ export default function Home() {
             Desenvolvendo <span className={styles.blueText}>aplicações modernas e eficientes</span> para transformar ideias em soluções digitais inovadoras.
           </h1>
           <div className={styles.heroSubtitle}>
-            {isClient && (
-              <Typewriter
-                options={{
-                  strings: [
-                    'Uma combinação de tecnologia, boas práticas e inovação para transformar ideias em soluções digitais.',
-                  ],
-                  autoStart: false,
-                  loop: false,
-                  delay: 50,
-                  cursor: '|',
-                }}
-                onInit={(typewriter) => {
-                  typewriter
-                    .typeString('Uma combinação de tecnologia, boas práticas e inovação para transformar ideias em soluções digitais.')
-                    .callFunction(() => {
-                      const cursor = document.querySelector('.Typewriter__cursor');
-                      if (cursor) {
-                        cursor.classList.add('blinking-cursor');
-                      }
-                    })
-                    .start();
-                }}
-              />
-            )}
-          </div>
+  {isClient && (
+    <ReactTyped
+      strings={[
+        'Uma combinação de tecnologia, boas práticas e inovação para transformar ideias em soluções digitais.',
+      ]}
+      typeSpeed={50}
+      backSpeed={30}
+      backDelay={1000}
+      startDelay={500}
+      loop={false}
+      showCursor={true}
+      cursorChar="|"
+    />
+  )}
+</div>
           <a
             href="./curriculo/Curriculo-Desenvolvedor-Gabriel-Avena.pdf"
             download="Curriculo-Desenvolvedor-Gabriel-Avena.pdf"

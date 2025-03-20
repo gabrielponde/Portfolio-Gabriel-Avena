@@ -20,8 +20,8 @@
     "react": "^19.0.0",
     "react-dom": "^19.0.0",
     "react-icons": "latest",
-    "three": "latest",
-    "typewriter-effect": "latest"
+    "react-typed": "^2.0.12",
+    "three": "latest"
   },
   "devDependencies": {
     "@types/node": "latest",

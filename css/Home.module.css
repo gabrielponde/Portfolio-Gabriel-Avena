@@ -239,6 +239,11 @@
   color: white;
 }
 
+.react-typed-cursor {
+  color: blue; /* Altere a cor conforme necessário */
+  font-size: 2rem; /* Ajuste o tamanho do cursor */
+}
+
 .skillsGrid {
   display: grid;
   grid-template-columns: repeat(auto-fit, minmax(100px, 1fr));
