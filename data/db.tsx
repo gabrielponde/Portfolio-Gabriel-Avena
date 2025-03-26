@@ -57,9 +57,24 @@ export const frontendProjects: Project[] = [
       <icons.SiCss3 key="css" size={24} title="CSS" />,
       <icons.SiFigma key="figma" size={24} title="Figma" />,
     ],
+  },{
+    id: 3,
+    title: 'Ebook Java Mastery',
+    image: '/images/ebook-java-mastery.png',
+    description:
+      'A Landing Page Java Mastery é uma aplicação web desenvolvida para promover e comercializar o ebook completo de aprendizado em Java. Apresenta um design moderno e alto poder de conversão.',
+    repoLink: 'https://github.com/gabrielponde/landing-page-conversao',
+    deployLink: 'https://ebook-java-mastery.vercel.app',
+    icons: [
+      <icons.SiReact key="react" size={24} title="React" />,
+      <icons.SiTypescript key="typescript" size={24} title="Typescript" />,
+      <icons.SiNextdotjs key="nextjs" size={24} title="NextJs" />,
+      <icons.SiCss3 key="css3" size={24} title="Css3" />,
+      <icons.SiFigma key="figma" size={24} title="Figma" />
+    ],
   },
   {
-    id: 3,
+    id: 4,
     title: 'F1 Legends',
     image: '/images/f1-legends.png',
     description:
