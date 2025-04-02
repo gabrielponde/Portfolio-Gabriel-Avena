@@ -908,7 +908,7 @@
   /* Ícones igual ao frontend */
   .projectCardFullstack .projectIconsFullstack {
     position: absolute;
-    bottom: 70px; /* Mesma posição */
+    bottom: 90px; /* Mesma posição */
     display: flex;
     gap: 8px;
     background: rgba(0, 0, 0, 0.8); /* Mesmo fundo */
