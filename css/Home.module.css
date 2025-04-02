@@ -321,24 +321,25 @@
 
 .projectTitleFullstack {
   position: absolute;
-  top: 30%; 
-  left: 0;
-  right: 0;
-  text-align: center;
-  color: #ffffff;
-  font-size: 2rem;
+  top: 40%;
+  left: 50%;
+  transform: translate(-50%, -50%); /* Centraliza o título */
+  color: rgba(255, 255, 255, 0.793); 
+  font-size: 1.5rem;
   font-weight: bold;
-  text-shadow: 0 2px 4px rgba(0,0,0,0.8);
-  margin: 0;
-  padding: 0 20px;
-  z-index: 2;
-  opacity: 1;
-  transition: opacity 0.3s ease;
+  text-shadow: 
+    2px 2px 4px rgba(0, 0, 0, 0.8), /* Sombra mais escura */
+    -2px -2px 4px rgba(0, 0, 0, 0.8); /* Sombra adicional para contraste */
+  margin: 0; /* Remove margens padrão do h3 */
+  z-index: 2; /* Garante que o título fique acima da imagem */
+  text-align: center; /* Centraliza o texto */
+  opacity: 1; /* Título completamente visível */
+  transition: opacity 0.3s ease, visibility 0.3s ease; /* Adiciona transição suave */
 }
 
 .projectIconsFullstack {
   position: absolute;
-  top: calc(30% + 50px);
+  top: calc(40% + 40px); 
   left: 0;
   right: 0;
   display: flex;
@@ -362,7 +363,8 @@
   object-fit: cover;
   object-position: center;
   transition: opacity 0.3s ease;
-  opacity: 0.8;
+  opacity: 0.5;
+  border-radius: 8px;
 }
 
 .projectOverlayFullstack {
@@ -370,17 +372,20 @@
   bottom: 0;
   left: 0;
   right: 0;
-  background: linear-gradient(to top, rgba(0,0,0,0.8) 0%, transparent 100%);
   padding: 20px;
   color: white;
   transition: all 0.3s ease;
 }
 
 .projectCardFullstack:hover {
-  transform: scale(1.02);
+  transform: scale(1.1);
   filter: brightness(1);
-  opacity: 1;
-  z-index: 2;
+  opacity: 1; /* Opacidade ao passar o mouse */
+  z-index: 2; /* Z-index maior para o card hovered */
+}
+
+.projectCardFullstack {
+  transform-origin: center; /* Garante que o zoom seja centralizado */
 }
 
 .projectCardFullstack:hover .projectImage {
@@ -389,7 +394,8 @@
 
 .projectCardFullstack:hover .projectTitleFullstack,
 .projectCardFullstack:hover .projectIconsFullstack {
-  opacity: 0;
+  opacity: 0; /* Torna o título invisível ao passar o mouse */
+  visibility: hidden;
 }
 
 .projectCardFullstack:hover .projectOverlayFullstack {
@@ -844,7 +850,7 @@
     box-sizing: border-box; /* Inclui padding e bordas no cálculo da largura */
   }
 
-  .projectCardFront 
+  .projectCardFront
   .projectCardBack
   .projectTitle {
     font-size: 1.2rem; /* Reduz o tamanho do texto em telas pequenas */
@@ -876,22 +882,48 @@
   }
 
   .projectCardFullstack {
-    height: 50vh;
-    max-height: 400px;
-    min-height: 300px;
+    border-radius: 8px; 
+    width: 100%;
+    height: 250px; /* Mesma altura dos frontend em mobile */
+    min-height: auto;
+    max-height: none;
   }
-  
-  .projectTitleFullstack {
-    font-size: 1.5rem;
-    top: 20%;
-    padding: 0 15px;
+
+  /* Título igual ao frontend */
+  .projectCardFullstack .projectTitleFullstack {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    font-size: 1.5rem; /* Tamanho igual */
+    width: 90%;
+    padding: 0;
+    text-align: center;
   }
-  
-  .projectIconsFullstack {
-    top: calc(20% + 40px);
-    padding: 6px;
-    gap: 10px;
-    max-width: 95%;
+
+  .projectCardFullstack {
+    margin: 30px 0; /* Aumenta a margem para acomodar o zoom */
+  }
+
+  /* Ícones igual ao frontend */
+  .projectCardFullstack .projectIconsFullstack {
+    position: absolute;
+    bottom: 70px; /* Mesma posição */
+    display: flex;
+    gap: 8px;
+    background: rgba(0, 0, 0, 0.8); /* Mesmo fundo */
+    padding: 8px;
+    width: auto;
+    flex-wrap: nowrap;
+    overflow-x: auto; /* Para muitos ícones */
+    top: auto; /* Remove o posicionamento por top */
+  }
+
+  /* Remove hover effects em mobile se necessário */
+  .projectCardFullstack:hover .projectTitleFullstack,
+  .projectCardFullstack:hover .projectIconsFullstack {
+    opacity: 1;
+    visibility: visible;
   }
 }
 
@@ -952,9 +984,14 @@
 
 @media (max-width: 480px) {
   .projectCardFullstack {
+    border-radius: 8px; 
     height: 40vh;
     max-height: 350px;
     min-height: 250px;
+    font-size: 1rem;
+    bottom: 60px;
+    padding: 6px;
+    gap: 6px;
   }
   
   .projectTitleFullstack {
@@ -963,7 +1000,7 @@
   }
   
   .projectIconsFullstack {
-    top: calc(15% + 35px);
+    bottom: 60px;
     padding: 5px;
     gap: 8px;
   }
