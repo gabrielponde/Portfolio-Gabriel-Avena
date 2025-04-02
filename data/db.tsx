@@ -24,6 +24,28 @@ interface Contact {
   label: string;
 }
 
+export const fullstackProjects: Project[] = [
+  {
+    id: 1,
+    title: 'Sale Point',
+    image: '/images/sale-point.png',
+    description:
+      'Sistema completo de gestão de vendas desenvolvido com Node.js, TypeScript, Next.js e Supabase. O Sale Point oferece uma plataforma intuitiva para gerenciamento eficiente de vendas, com recursos avançados de autenticação e gestão de usuários, clientes, produtos e pedidos.',
+    repoLink: 'https://github.com/gabrielponde/Sale-point',
+    deployLink: 'https://sale-point-app.vercel.app',
+    icons: [
+      <icons.SiReact key="react" size={24} title="React" />,
+      <icons.SiTypescript key="typescript" size={24} title="Typescript" />,
+      <icons.SiNextdotjs key="nextjs" size={24} title="NextJs" />,
+      <icons.SiPostgresql key="postgresql" size={24} title="Postgresql" />,
+      <icons.SiSupabase key="supabase" size={24} title="Supabase" />,
+      <icons.SiNodedotjs key="nodejs" size={24} title="NodeJs" />,  
+      <icons.SiCss3 key="css3" size={24} title="Css3" />,
+      <icons.SiFigma key="figma" size={24} title="Figma" />
+    ],
+  }
+];
+
 export const frontendProjects: Project[] = [
   {
     id: 1,
@@ -39,6 +61,7 @@ export const frontendProjects: Project[] = [
       <icons.SiTypescript key="typescript" size={24} title="Typescript" />,
       <icons.SiNextdotjs key="nextjs" size={24} title="NextJs" />,
       <icons.SiPostgresql key="postgresql" size={24} title="Postgresql" />,
+      <icons.SiSupabase key="supabase" size={24} title="Supabase" />,
       <icons.SiCss3 key="css3" size={24} title="Css3" />,
       <icons.SiFigma key="figma" size={24} title="Figma" />
     ],

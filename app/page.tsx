@@ -4,7 +4,7 @@ import { ReactTyped } from 'react-typed';
 import { useState, useEffect } from 'react';
 import Link from 'next/link';
 import styles from '../css/Home.module.css';
-import { Project, frontendProjects, backendProjects, skills, contacts } from '../data/db';
+import { Project, frontendProjects, backendProjects, skills, contacts, fullstackProjects } from '../data/db';
 import App from '../components/band/App';
 
 export default function Home() {
@@ -182,6 +182,32 @@ export default function Home() {
         <div className={styles.container}>
           <h2 className={styles.sectionTitle}>Projetos</h2>
           <div className={styles.projectsGrid}>
+            {/* Título para projetos de Fullstack */}
+            <h3 className={styles.subSectionTitle}>Fullstack</h3>
+<div className={styles.fullstackProjects}>
+  {fullstackProjects.map((project) => (
+    <div
+      key={project.id}
+      className={styles.projectCardFullstack}
+      onClick={() => openModal(project)}
+    >
+      <div className={styles.projectImageContainer}>
+        <img
+          src={project.image}
+          alt={project.title}
+          className={styles.projectImage}
+        />
+        <h3 className={styles.projectTitleFullstack}>{project.title}</h3>
+        <div className={styles.projectIconsFullstack}>
+          {project.icons}
+        </div>
+        <div className={styles.projectOverlayFullstack}>
+          <p className={styles.projectDescription}>{project.description}</p>
+        </div>
+      </div>
+    </div>
+  ))}
+</div>
             {/* Título para projetos de Front-end */}
             <h3 className={styles.subSectionTitle}>Front-end</h3>
             <div className={styles.frontendProjects}>

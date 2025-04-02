@@ -14,6 +14,7 @@ import {
     SiDocker,
     SiVite,
     SiPostgresql,
+    SiSupabase,
     SiFigma,
     SiTailwindcss,
   } from 'react-icons/si';
@@ -35,6 +36,7 @@ import {
     SiDocker,
     SiVite,
     SiPostgresql,
+    SiSupabase,
     SiFigma,
     SiTailwindcss,
     FaEnvelope,
