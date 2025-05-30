@@ -1,5 +1,6 @@
 import { icons } from '../icons';
 import React, { JSX } from 'react';
+import { FaJava } from 'react-icons/fa';
 
 export interface Project {
   id: number;
@@ -71,7 +72,7 @@ export const frontendProjects: Project[] = [
     title: 'Curso de AI com Python',
     image: '/images/curso-ai-python.png',
     description:
-      'Landing page para um curso de Inteligência Artificial com Python. Desenvolvida com React, Sigma e JavaScript, a página oferece uma experiência moderna e interativa para os usuários.',
+      'Landing page para um curso de Inteligência Artificial com Python. Desenvolvida com React, Figma e JavaScript, a página oferece uma experiência moderna e interativa para os usuários.',
     repoLink: 'https://github.com/gabrielponde/Curso-IA-com-Python---LandingPage',
     deployLink: 'https://curso-ia-com-python-landing-page.vercel.app',
     icons: [
@@ -131,6 +132,11 @@ export const backendProjects: Project[] = [
 ];
 
 export const skills: Skill[] = [
+  {
+    name: 'Java',
+    icon: <FaJava size={40} />,
+    description: 'Linguagem de programação orientada a objetos usada em aplicações robustas.',
+  },
   {
     name: 'JavaScript',
     icon: <icons.SiJavascript size={40} />,
