@@ -13,16 +13,12 @@
 }
 
 .headerName {
-  font-size: 1.5rem;
-  font-weight: 500;
-  text-transform: uppercase;
-  letter-spacing: 1px;
-  color: #ffffff;
-}
-
-.headerName:hover {
-  color: #0037ff;
-}
+  width: 350px;
+  height: 150px;
+  margin-top: 0px;
+  height: auto;
+  object-fit: contain;
+} 
 
 .nav {
   display: flex;
@@ -71,7 +67,7 @@
   z-index: 1001;
   position: absolute;
   right: 4rem;
-  top: 14px;
+  top: 30px;
   padding: 10px;
 }
 
@@ -785,6 +781,11 @@
     color: #ffffff; 
   }
 
+  .headerName {
+    width: 180px;
+    margin-top: 15cpx;
+  }
+
   .heroContent {
     display: flex;
     flex-direction: column;
@@ -945,6 +946,10 @@
     font-size: 1rem;
   }
 
+  .headerName {
+    width: 250px;
+  }
+
   .section {
     padding: 3rem 1rem;
   }
@@ -983,6 +988,12 @@
 }
 
 @media (max-width: 480px) {
+
+  .headerName {
+    width: 200px;
+    margin-top: 20px;
+  }
+
   .projectCardFullstack {
     border-radius: 8px; 
     height: 40vh;

@@ -50,7 +50,7 @@ export default function Home() {
         transition={{ duration: 1, type: 'spring', stiffness: 100 }}
         viewport={{ once: false }}
       >
-        <span className={styles.headerName}>&lt; Gabriel Avena /&gt;</span>
+        <img className={styles.headerName} src="/images/logo.png" alt="Logo" />
 
         {/* Botão do Menu para Mobile */}
         <button className={styles.menuButton} onClick={toggleMenu}>
@@ -107,8 +107,8 @@ export default function Home() {
   )}
 </div>
           <a
-            href="./curriculo/Curriculo-Desenvolvedor-Gabriel-Avena.pdf"
-            download="Curriculo-Desenvolvedor-Gabriel-Avena.pdf"
+            href="./curriculo/Curriculo Desenvolvedor de Software - Gabriel Avena.pdf"
+            download="Curriculo Desenvolvedor de Software - Gabriel Avena.pdf"
             type="application/pdf"
             className={styles.heroButton}
           >
