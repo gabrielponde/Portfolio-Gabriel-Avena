@@ -7,7 +7,7 @@ export default function Head() {
       <meta property="og:type" content="website" />
       <meta property="og:title" content="Gabriel Avena - Software Developer" />
       <meta property="og:description" content="Confira meu portfólio e projetos." />
-      <meta property="og:image" content="https://portfolio-gabriel-avena.vercel.app/images/logo.png" />
+      <meta property="og:image" content="https://portfolio-gabriel-avena.vercel.app/images/avena-banner.png" />
       <meta property="og:image:width" content="1200" />
       <meta property="og:image:height" content="630" />
       <meta name="twitter:card" content="summary_large_image" />
@@ -15,7 +15,7 @@ export default function Head() {
       <meta property="twitter:url" content="https://portfolio-gabriel-avena.vercel.app" />
       <meta name="twitter:title" content="Gabriel Avena - Software Developer" />
       <meta name="twitter:description" content="Confira meu portfólio e projetos." />
-      <meta name="twitter:image" content="https://portfolio-gabriel-avena.vercel.app/images/logo.png" />
+      <meta name="twitter:image" content="https://portfolio-gabriel-avena.vercel.app/images/avena-banner.png" />
     </>
   );
 }
