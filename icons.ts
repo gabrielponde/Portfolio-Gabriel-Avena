@@ -19,9 +19,7 @@ import {
     SiTailwindcss,
   } from 'react-icons/si';
   
-  import { FaEnvelope, FaWhatsapp, FaLinkedin, FaGithub } from 'react-icons/fa';
-
-  import { FaJava } from "react-icons/fa6"
+  import { FaEnvelope, FaWhatsapp, FaLinkedin, FaGithub, FaInstagram, FaJava } from 'react-icons/fa';
   
   export const icons = {
     SiJavascript,
@@ -46,4 +44,6 @@ import {
     FaWhatsapp,
     FaLinkedin,
     FaGithub,
+    FaInstagram,
+    FaJava
   };

@@ -1,6 +1,5 @@
 import { icons } from '../icons';
 import React, { JSX } from 'react';
-import { FaJava } from 'react-icons/fa';
 
 export interface Project {
   id: number;
@@ -134,7 +133,7 @@ export const backendProjects: Project[] = [
 export const skills: Skill[] = [
   {
     name: 'Java',
-    icon: <FaJava size={40} />,
+    icon: <icons.FaJava size={40} />,
     description: 'Linguagem de programação orientada a objetos usada em aplicações robustas.',
   },
   {
@@ -245,8 +244,14 @@ export const contacts: Contact[] = [
   },
   {
     type: 'github',
+    icon: <icons.FaInstagram size={40} />,
+    link: 'https://www.instagram.com/avenacode/',
+    label: '@avenacode',
+  },
+  {
+    type: 'github',
     icon: <icons.FaGithub size={40} />,
     link: 'https://github.com/gabrielponde',
     label: '@gabrielponde',
-  },
+  }
 ];
