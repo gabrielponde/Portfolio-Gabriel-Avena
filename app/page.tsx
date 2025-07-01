@@ -1,28 +1,3 @@
-export const metadata = {
-  title: 'Gabriel Avena - Software Developer',
-  description: 'Confira meu portfólio e projetos.',
-  openGraph: {
-    title: 'Gabriel Avena - Software Developer',
-    description: 'Confira meu portfólio e projetos.',
-    url: 'https://portfolio-gabriel-avena.vercel.app',
-    type: 'website',
-    images: [
-      {
-        url: 'https://portfolio-gabriel-avena.vercel.app/images/avena-banner.png',
-        width: 1200,
-        height: 630,
-        alt: 'Gabriel Avena - Banner',
-      },
-    ],
-  },
-  twitter: {
-    card: 'summary_large_image',
-    title: 'Gabriel Avena - Software Developer',
-    description: 'Confira meu portfólio e projetos.',
-    images: ['https://portfolio-gabriel-avena.vercel.app/images/avena-banner.png'],
-  },
-};
-
 'use client';
 
 import { motion } from 'framer-motion';
