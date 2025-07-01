@@ -3,6 +3,7 @@ import { motion } from 'framer-motion';
 import { ReactTyped } from 'react-typed';
 import { useState, useEffect } from 'react';
 import Link from 'next/link';
+import Head from 'next/head';
 import styles from '../css/Home.module.css';
 import { Project, frontendProjects, backendProjects, skills, contacts, fullstackProjects } from '../data/db';
 import App from '../components/band/App';
@@ -42,6 +43,21 @@ export default function Home() {
 
   return (
     <div>
+      <Head>
+        <title>Gabriel Avena - Software Developer</title>
+        <meta name="description" content="Confira meu portfólio e projetos." />
+        <meta property="og:url" content="https://portfolio-gabriel-avena.vercel.app" />
+        <meta property="og:type" content="website" />
+        <meta property="og:title" content="Gabriel Avena - Software Developer" />
+        <meta property="og:description" content="Confira meu portfólio e projetos." />
+        <meta property="og:image" content="https://portfolio-gabriel-avena.vercel.app/images/og-image.png" />
+        <meta name="twitter:card" content="summary_large_image" />
+        <meta property="twitter:domain" content="portfolio-gabriel-avena.vercel.app" />
+        <meta property="twitter:url" content="https://portfolio-gabriel-avena.vercel.app" />
+        <meta name="twitter:title" content="Gabriel Avena - Software Developer" />
+        <meta name="twitter:description" content="Confira meu portfólio e projetos." />
+        <meta name="twitter:image" content="https://portfolio-gabriel-avena.vercel.app/images/og-image.png" />
+      </Head>
       {/* Header */}
       <motion.header
         className={styles.header}
