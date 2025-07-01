@@ -7,7 +7,7 @@ export default function Head() {
       <meta property="og:type" content="website" />
       <meta property="og:title" content="Gabriel Avena - Software Developer" />
       <meta property="og:description" content="Confira meu portfólio e projetos." />
-<meta property="og:image" content="https://www.w3schools.com/w3images/lights.jpg" />
+      <meta property="og:image" content="https://portfolio-gabriel-avena.vercel.app/images/logo.png" />
       <meta property="og:image:width" content="1200" />
       <meta property="og:image:height" content="630" />
       <meta name="twitter:card" content="summary_large_image" />
