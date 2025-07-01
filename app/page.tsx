@@ -44,20 +44,24 @@ export default function Home() {
   return (
     <div>
       <Head>
-        <title>Gabriel Avena - Software Developer</title>
-        <meta name="description" content="Confira meu portfólio e projetos." />
-        <meta property="og:url" content="https://portfolio-gabriel-avena.vercel.app" />
-        <meta property="og:type" content="website" />
-        <meta property="og:title" content="Gabriel Avena - Software Developer" />
-        <meta property="og:description" content="Confira meu portfólio e projetos." />
-        <meta property="og:image" content="https://portfolio-gabriel-avena.vercel.app/images/og-image.png" />
-        <meta name="twitter:card" content="summary_large_image" />
-        <meta property="twitter:domain" content="portfolio-gabriel-avena.vercel.app" />
-        <meta property="twitter:url" content="https://portfolio-gabriel-avena.vercel.app" />
-        <meta name="twitter:title" content="Gabriel Avena - Software Developer" />
-        <meta name="twitter:description" content="Confira meu portfólio e projetos." />
-        <meta name="twitter:image" content="https://portfolio-gabriel-avena.vercel.app/images/og-image.png" />
-      </Head>
+  <title>Gabriel Avena - Software Developer</title>
+  <meta name="description" content="Confira meu portfólio e projetos." />
+  <meta property="og:url" content="https://portfolio-gabriel-avena.vercel.app" />
+  <meta property="og:type" content="website" />
+  <meta property="og:title" content="Gabriel Avena - Software Developer" />
+  <meta property="og:description" content="Confira meu portfólio e projetos." />
+  <meta property="og:image" content="https://portfolio-gabriel-avena.vercel.app/images/avena-banner.png" />
+  <meta property="og:image:width" content="1200" />
+  <meta property="og:image:height" content="630" />
+  <link rel="image_src" href="https://portfolio-gabriel-avena.vercel.app/images/avena-banner.png" />
+  <meta name="twitter:card" content="summary_large_image" />
+  <meta property="twitter:domain" content="portfolio-gabriel-avena.vercel.app" />
+  <meta property="twitter:url" content="https://portfolio-gabriel-avena.vercel.app" />
+  <meta name="twitter:title" content="Gabriel Avena - Software Developer" />
+  <meta name="twitter:description" content="Confira meu portfólio e projetos." />
+  <meta name="twitter:image" content="https://portfolio-gabriel-avena.vercel.app/images/avena-banner.png" />
+</Head>
+
       {/* Header */}
       <motion.header
         className={styles.header}
