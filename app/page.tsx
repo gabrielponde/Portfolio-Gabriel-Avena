@@ -50,7 +50,7 @@ export default function Home() {
   <meta property="og:type" content="website" />
   <meta property="og:title" content="Gabriel Avena - Software Developer" />
   <meta property="og:description" content="Confira meu portfólio e projetos." />
-  <meta property="og:image" content="https://portfolio-gabriel-avena.vercel.app/images/avena-banner.png" />
+  <meta property="og:image" content="https://opengraph.b-cdn.net/production/images/b882f07a-bd22-428e-af29-688e9e9887b1.png?token=VSfWtJt45oxSQ_3ZA9HoomZxzhIUnXrCVgPw6rwmLcg&height=630&width=1200&expires=33287353097" />
   <meta property="og:image:width" content="1200" />
   <meta property="og:image:height" content="630" />
   <link rel="image_src" href="https://portfolio-gabriel-avena.vercel.app/images/avena-banner.png" />
@@ -59,7 +59,7 @@ export default function Home() {
   <meta property="twitter:url" content="https://portfolio-gabriel-avena.vercel.app" />
   <meta name="twitter:title" content="Gabriel Avena - Software Developer" />
   <meta name="twitter:description" content="Confira meu portfólio e projetos." />
-  <meta name="twitter:image" content="https://portfolio-gabriel-avena.vercel.app/images/avena-banner.png" />
+  <meta name="twitter:image" content="https://opengraph.b-cdn.net/production/images/b882f07a-bd22-428e-af29-688e9e9887b1.png?token=VSfWtJt45oxSQ_3ZA9HoomZxzhIUnXrCVgPw6rwmLcg&height=630&width=1200&expires=33287353097" />
 </Head>
 
       {/* Header */}
