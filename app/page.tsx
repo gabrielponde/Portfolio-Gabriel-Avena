@@ -154,24 +154,75 @@ export default function Home() {
       >
         <div className={styles.container}>
           <h2 className={styles.sectionTitle}>Projetos</h2>
-          <h3 className={styles.subSectionTitle}>Fullstack</h3>
-          <div className={styles.fullstackProjects}>
-            {fullstackProjects.map((project) => (
-              <div key={project.id} className={styles.projectCardFullstack} onClick={() => openModal(project)}>
-                <div className={styles.projectImageContainer}>
-                  <img src={project.image} alt={project.title} className={styles.projectImage} />
-                  <h3 className={styles.projectTitleFullstack}>{project.title}</h3>
-                  <div className={styles.projectIconsFullstack}>{project.icons}</div>
-                  <div className={styles.projectOverlayFullstack}>
-                    <p className={styles.projectDescription}>{project.description}</p>
+          <div className={styles.projectsGrid}>
+            {/* Título para projetos de Fullstack */}
+            <h3 className={styles.subSectionTitle}>Fullstack</h3>
+<div className={styles.fullstackProjects}>
+  {fullstackProjects.map((project) => (
+    <div
+      key={project.id}
+      className={styles.projectCardFullstack}
+      onClick={() => openModal(project)}
+    >
+      <div className={styles.projectImageContainer}>
+        <img
+          src={project.image}
+          alt={project.title}
+          className={styles.projectImage}
+        />
+        <h3 className={styles.projectTitleFullstack}>{project.title}</h3>
+        <div className={styles.projectIconsFullstack}>
+          {project.icons}
+        </div>
+        <div className={styles.projectOverlayFullstack}>
+          <p className={styles.projectDescription}>{project.description}</p>
+        </div>
+      </div>
+    </div>
+  ))}
+</div>
+            {/* Título para projetos de Front-end */}
+            <h3 className={styles.subSectionTitle}>Front-end</h3>
+            <div className={styles.frontendProjects}>
+              {frontendProjects.map((project) => (
+                <div
+                  key={project.id}
+                  className={styles.projectCardFront}
+                  onClick={() => openModal(project)}
+                >
+                  <div className={styles.projectImageContainer}>
+                    <img
+                      src={project.image}
+                      alt={project.title}
+                      className={styles.projectImage}
+                    />
+                    <h3 className={styles.projectTitle}>{project.title}</h3>
+                    <div className={styles.projectIcons}>
+                      {project.icons}
+                    </div>
+                    <div className={styles.projectOverlay}>
+                      <p className={styles.projectDescription}>{project.description}</p>
+                    </div>
                   </div>
                 </div>
-              </div>
-            ))}
-          </div>
+              ))}
+            </div>
 
-          {/* Frontend e Backend iguais ao seu código, pode manter normalmente */}
-          {/* ... */}
+            {/* Título para projetos de Back-end */}
+            <h3 className={styles.subSectionTitle}>Back-end</h3>
+            <div className={styles.backendProjects}>
+              {backendProjects.map((project) => (
+                <div
+                  key={project.id}
+                  className={styles.projectCardBack}
+                  onClick={() => openModal(project)}
+                >
+                  <h3 className={styles.projectTitle}>{project.title}</h3>
+                  <p className={styles.projectText}>{project.description}</p>
+                </div>
+              ))}
+            </div>
+          </div>
         </div>
       </motion.section>
 
@@ -179,20 +230,31 @@ export default function Home() {
       {modalOpen && selectedProject && (
         <div className={`${styles.modal} ${modalOpen ? styles.open : ''}`}>
           <div className={styles.modalContent}>
-            <button className={styles.closeModal} onClick={closeModal}>&times;</button>
+            <button className={styles.closeModal} onClick={closeModal}>
+              &times;
+            </button>
             <h3>{selectedProject.title}</h3>
-            {selectedProject.image && <img src={selectedProject.image} alt={selectedProject.title} className={styles.projectImage} />}
+            {selectedProject.image && (
+              <img
+                src={selectedProject.image}
+                alt={selectedProject.title}
+                className={styles.projectImage}
+              />
+            )}
             <p>{selectedProject.description}</p>
             <div className={styles.projectLinks}>
-              <a href={selectedProject.repoLink} target="_blank" rel="noopener noreferrer">Repositório</a>
+              <a href={selectedProject.repoLink} target="_blank" rel="noopener noreferrer">
+                Repositório
+              </a>
               {selectedProject.deployLink && (
-                <a href={selectedProject.deployLink} target="_blank" rel="noopener noreferrer">Acessar Projeto</a>
+                <a href={selectedProject.deployLink} target="_blank" rel="noopener noreferrer">
+                  Acessar Projeto
+                </a>
               )}
             </div>
           </div>
         </div>
       )}
-
       {/* Contato */}
       <motion.section
         id="contato"
