@@ -269,7 +269,6 @@ export default function Home() {
             {contacts.map((contact, index) => (
               <a key={index} href={contact.link} className={styles.contactLink}>
                 {contact.icon}
-                <span>{contact.label}</span>
               </a>
             ))}
           </div>

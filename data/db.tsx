@@ -252,6 +252,6 @@ export const contacts: Contact[] = [
     type: 'github',
     icon: <icons.FaGithub size={40} />,
     link: 'https://github.com/gabrielponde',
-    label: '@gabrielponde',
+    label: '@gabrielponde'
   }
 ];
