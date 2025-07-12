@@ -19,32 +19,51 @@ Aqui estão algumas das tecnologias e ferramentas com as quais trabalho:
 
 Aqui estão alguns dos projetos que desenvolvi:
 
-### 1. **Cafeteria Cubspresso**
-   - **Descrição:** Um catálogo online de cafés desenvolvido com React, permitindo aos usuários visualizar informações detalhadas sobre diferentes tipos de café.
-   - **Tecnologias:** React, JavaScript, CSS, Tyscript, Next.js, Jest, Cypress.
-   - **[Repositório](https://github.com/gabrielponde/Projeto-Cafeteria-Cubspresso)**
+### 1. **Sale Point**
+   - **Descrição:** Sistema completo de gestão de vendas desenvolvido com Node.js, TypeScript, Next.js e Supabase. O Sale Point oferece uma plataforma intuitiva para gerenciamento eficiente de vendas, com recursos avançados de autenticação e gestão de usuários, clientes, produtos e pedidos.
+   - **Tecnologias:** React, TypeScript, Next.js, PostgreSQL, Supabase, Node.js, CSS3, Figma.
+   - **[Repositório](https://github.com/gabrielponde/Sale-point)**
+   - **[Deploy](https://sale-point-app.vercel.app)**
 
-### 2. **Bank API**
-   - **Descrição:** Uma API RESTful educativa que simula operações bancárias básicas, projetada para treinar habilidades em APIs financeiras.
+### 2. **Cafeteria Cubspresso**
+   - **Descrição:** Este projeto é um catálogo online de cafés, desenvolvido com React. O objetivo é listar diferentes tipos de café, permitindo aos usuários visualizarem informações detalhadas sobre cada um.
+   - **Tecnologias:** React, JavaScript, TypeScript, Next.js, PostgreSQL, Supabase, CSS3, Figma.
+   - **[Repositório](https://github.com/gabrielponde/Projeto-Cafeteria-Cubspresso)**
+   - **[Deploy](https://cafeteria-cubspresso.vercel.app)**
+
+### 3. **Curso de AI com Python**
+   - **Descrição:** Landing page para um curso de Inteligência Artificial com Python. Desenvolvida com React, Figma e JavaScript, a página oferece uma experiência moderna e interativa para os usuários.
+   - **Tecnologias:** React, JavaScript, CSS, Figma.
+   - **[Repositório](https://github.com/gabrielponde/Curso-IA-com-Python---LandingPage)**
+   - **[Deploy](https://curso-ia-com-python-landing-page.vercel.app)**
+
+### 4. **Ebook Java Mastery**
+   - **Descrição:** A Landing Page Java Mastery é uma aplicação web desenvolvida para promover e comercializar o ebook completo de aprendizado em Java. Apresenta um design moderno e alto poder de conversão.
+   - **Tecnologias:** React, TypeScript, Next.js, CSS3, Figma.
+   - **[Repositório](https://github.com/gabrielponde/landing-page-conversao)**
+   - **[Deploy](https://ebook-java-mastery.vercel.app)**
+
+### 5. **F1 Legends**
+   - **Descrição:** O projeto F1-Legends é uma aplicação web dedicada a homenagear os maiores pilotos da história da Fórmula 1. Através de perfis detalhados, os usuários podem explorar informações sobre a vida, carreira e conquistas desses ícones do automobilismo.
+   - **Tecnologias:** HTML, JavaScript, CSS, Figma.
+   - **[Repositório](https://github.com/gabrielponde/F1-Legends)**
+   - **[Deploy](https://f1-legends.vercel.app)**
+
+### 6. **Bank API**
+   - **Descrição:** BankAPI é uma API RESTful educativa que simula operações bancárias básicas. Projetada para desenvolvedores, oferece uma plataforma segura e intuitiva para treinar habilidades em APIs financeiras, com documentação clara e foco em aprendizado prático.
    - **Tecnologias:** Node.js, Express, PostgreSQL.
    - **[Repositório](https://github.com/gabrielponde/BankAPI)**
 
-### 3. **Ponto de Venda (PDV)**
-   - **Descrição:** Uma API RESTful para um sistema de Ponto de Venda (PDV), com funcionalidades de gerenciamento de usuários, produtos, categorias, clientes e pedidos.
+### 7. **Ponto de Venda**
+   - **Descrição:** Desenvolvimento de uma API RESTful para um sistema de Ponto de Venda (PDV), com funcionalidades de gerenciamento de usuários, produtos, categorias, clientes e pedidos. A API permite operações CRUD (Create, Read, Update, Delete) para otimizar processos comerciais e garantir eficiência nas operações.
    - **Tecnologias:** Node.js, Express, PostgreSQL.
    - **[Repositório](https://github.com/gabrielponde/Ponto-de-Venda)**
-
-### 4. **F1 Legends**
-   - **Descrição:** Uma aplicação web dedicada a homenagear os maiores pilotos da história da Fórmula 1, com perfis detalhados e informações sobre suas carreiras.
-   - **Tecnologias:**  JavaScript, CSS, Html.
-   - **[Repositório](https://github.com/gabrielponde/F1-Legends)**
 
 ## 📫 Contato
 
 Se você quiser entrar em contato comigo para oportunidades de trabalho, colaborações ou apenas para bater um papo, sinta-se à vontade para me enviar uma mensagem:
 
 - **E-mail:** gabrielpavena.developer@gmail.com
-- **WhatsApp:** [(71) 98798-7966](https://wa.me/5571987987966)
 - **LinkedIn:** [Gabriel Avena](https://www.linkedin.com/in/gabriel-avena/)
 - **GitHub:** [gabrielponde](https://github.com/gabrielponde)
 

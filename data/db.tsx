@@ -231,12 +231,6 @@ export const contacts: Contact[] = [
     label: 'gabrielpavena.developer@gmail.com',
   },
   {
-    type: 'whatsapp',
-    icon: <icons.FaWhatsapp size={40} />,
-    link: 'https://wa.me/5571987987966',
-    label: '(71) 98798-7966',
-  },
-  {
     type: 'linkedin',
     icon: <icons.FaLinkedin size={40} />,
     link: 'https://www.linkedin.com/in/gabriel-avena/',
