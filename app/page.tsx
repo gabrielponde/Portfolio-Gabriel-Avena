@@ -89,8 +89,8 @@ export default function Home() {
             )}
           </div>
           <a
-            href="./curriculo/Curriculo Desenvolvedor de Software - Gabriel Avena.pdf"
-            download="Curriculo Desenvolvedor de Software - Gabriel Avena.pdf"
+            href="./curriculo/Currículo - Gabriel Avena.pdf"
+            download="Currículo - Gabriel Avena.pdf"
             type="application/pdf"
             className={styles.heroButton}
           >
