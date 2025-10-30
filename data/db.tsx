@@ -49,6 +49,82 @@ export const fullstackProjects: Project[] = [
 export const frontendProjects: Project[] = [
   {
     id: 1,
+    title: 'Landing Page de Vendas - Psicólogos',
+    image: '/images/landing-psicologos-showcase.png',
+    description:
+      'Landing page de vendas para serviço de criação de sites para psicólogos, psicanalistas e terapeutas. Apresenta 4 modelos de landing pages com showcase interativo, seção de preços, garantia de satisfação e formulário de contato. Design focado em conversão e profissionalismo.',
+    repoLink: 'https://github.com/gabrielponde/landing_page_psi',
+    deployLink: 'https://psicologos-landing-showcase.vercel.app',
+    icons: [
+      <icons.SiReact key="react" size={24} title="React" />,
+      <icons.SiTypescript key="typescript" size={24} title="Typescript" />,
+      <icons.SiNextdotjs key="nextjs" size={24} title="NextJs" />,
+      <icons.SiTailwindcss key="tailwind" size={24} title="TailwindCSS" />,
+      <icons.SiFigma key="figma" size={24} title="Figma" />
+    ],
+  },
+  {
+    id: 2,
+    title: 'Landing Page Psicólogo - Modelo Clássico',
+    image: '/images/landing-psicologo-classico.png',
+    description:
+      'Template profissional para psicólogos com design formal e elegante. Inclui seção FAQ, formulário de contato com validação LGPD e política de privacidade completa. Desenvolvido com foco em conformidade ética (CFP) e transmissão de credibilidade profissional.',
+    repoLink: 'https://github.com/gabrielponde/landing_page_psi',
+    deployLink: 'https://landing-psicologo-classico.vercel.app',
+    icons: [
+      <icons.SiReact key="react" size={24} title="React" />,
+      <icons.SiTypescript key="typescript" size={24} title="Typescript" />,
+      <icons.SiNextdotjs key="nextjs" size={24} title="NextJs" />,
+      <icons.SiTailwindcss key="tailwind" size={24} title="TailwindCSS" />
+    ],
+  },
+  {
+    id: 3,
+    title: 'Landing Page Psicólogo - Modelo Moderno',
+    image: '/images/landing-psicologo-moderno.png',
+    description:
+      'Template minimalista e contemporâneo para psicólogos. Design clean com foco em espaços em branco e tipografia elegante. Ideal para profissionais com perfil moderno e público jovem.',
+    repoLink: 'https://github.com/gabrielponde/landing_page_psi',
+    deployLink: 'https://landing-psicologo-moderno.vercel.app',
+    icons: [
+      <icons.SiReact key="react" size={24} title="React" />,
+      <icons.SiTypescript key="typescript" size={24} title="Typescript" />,
+      <icons.SiNextdotjs key="nextjs" size={24} title="NextJs" />,
+      <icons.SiTailwindcss key="tailwind" size={24} title="TailwindCSS" />
+    ],
+  },
+  {
+    id: 4,
+    title: 'Landing Page Psicólogo - Modelo Acolhedor',
+    image: '/images/landing-psicologo-acolhedor.png',
+    description:
+      'Template com cores quentes e formas orgânicas que criam um ambiente acolhedor e empático. Inclui seção FAQ. Ideal para abordagens humanistas e terapias focadas em vínculo emocional.',
+    repoLink: 'https://github.com/gabrielponde/landing_page_psi',
+    deployLink: 'https://landing-psicologo-acolhedor.vercel.app',
+    icons: [
+      <icons.SiReact key="react" size={24} title="React" />,
+      <icons.SiTypescript key="typescript" size={24} title="Typescript" />,
+      <icons.SiNextdotjs key="nextjs" size={24} title="NextJs" />,
+      <icons.SiTailwindcss key="tailwind" size={24} title="TailwindCSS" />
+    ],
+  },
+  {
+    id: 5,
+    title: 'Landing Page Psicólogo - Modelo Online',
+    image: '/images/landing-psicologo-online.png',
+    description:
+      'Template especializado em terapia online. Inclui seções sobre plataformas de atendimento, segurança de dados, FAQ completo e design tech moderno. Ideal para profissionais que atuam 100% remotamente.',
+    repoLink: 'https://github.com/gabrielponde/landing_page_psi',
+    deployLink: 'https://landing-psicologo-online.vercel.app',
+    icons: [
+      <icons.SiReact key="react" size={24} title="React" />,
+      <icons.SiTypescript key="typescript" size={24} title="Typescript" />,
+      <icons.SiNextdotjs key="nextjs" size={24} title="NextJs" />,
+      <icons.SiTailwindcss key="tailwind" size={24} title="TailwindCSS" />
+    ],
+  },
+  {
+    id: 6,
     title: 'Cafeteria Cubspresso',
     image: '/images/cafeteria-cubspresso.png',
     description:
@@ -67,7 +143,7 @@ export const frontendProjects: Project[] = [
     ],
   },
   {
-    id: 2,
+    id: 7,
     title: 'Curso de AI com Python',
     image: '/images/curso-ai-python.png',
     description:
@@ -80,8 +156,9 @@ export const frontendProjects: Project[] = [
       <icons.SiCss3 key="css" size={24} title="CSS" />,
       <icons.SiFigma key="figma" size={24} title="Figma" />,
     ],
-  },{
-    id: 3,
+  },
+  {
+    id: 8,
     title: 'Ebook Java Mastery',
     image: '/images/ebook-java-mastery.png',
     description:
@@ -97,7 +174,7 @@ export const frontendProjects: Project[] = [
     ],
   },
   {
-    id: 4,
+    id: 9,
     title: 'F1 Legends',
     image: '/images/f1-legends.png',
     description:
