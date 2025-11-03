@@ -29,6 +29,9 @@ export const metadata: Metadata = {
     description: 'Confira meu portfólio e projetos.',
     images: ['/images/avena-banner.png'],
   },
+  verification: {
+    google: '73wdnYkdqQZl46BmV50CR8ijT5iyo4WCB0t0RMUbj4o'
+  },
 }
 
 export default function RootLayout({
