@@ -1,3 +1,5 @@
+/* ARQUIVO: app/page.tsx (Substitua tudo) */
+
 'use client';
 
 import { motion } from 'framer-motion';
@@ -8,7 +10,25 @@ import styles from '../css/Home.module.css';
 import { Project, frontendProjects, backendProjects, skills, contacts, fullstackProjects } from '../data/db';
 import App from '../components/band/App';
 
-export default function Home() {
+// --- 1. HOOK 'useIsMobile' ---
+// (Detecta o tamanho da tela de forma segura no Next.js)
+function useIsMobile(breakpoint = 768) {
+  const [isMobile, setIsMobile] = useState<boolean | null>(null); // Começa como nulo
+  useEffect(() => {
+    function checkSize() {
+      setIsMobile(window.innerWidth < breakpoint);
+    }
+    checkSize(); // Roda na primeira vez
+    window.addEventListener('resize', checkSize); // Roda ao redimensionar
+    return () => window.removeEventListener('resize', checkSize);
+  }, [breakpoint]);
+  return isMobile;
+}
+// --- FIM DO HOOK ---
+
+// --- 2. SEU CONTEÚDO ORIGINAL VIROU 'PageContent' ---
+// ▼▼▼ CORREÇÃO AQUI: Agora ele aceita 'isMobile' como prop ▼▼▼
+function PageContent({ isMobile }: { isMobile: boolean | null }) {
   const [isMenuOpen, setIsMenuOpen] = useState(false);
   const [isClient, setIsClient] = useState(false);
   const [skillInfo, setSkillInfo] = useState<string | null>(null);
@@ -62,7 +82,7 @@ export default function Home() {
         </nav>
       </motion.header>
 
-      {/* Seção Hero */}
+      {/* Seção Hero (Layout original do PC) */}
       <motion.section
         className={styles.heroSection}
         initial={{ opacity: 0, x: -200 }}
@@ -97,9 +117,14 @@ export default function Home() {
             Baixar Currículo
           </a>
         </div>
-        <div className={styles.bandContainer}>
-          <App />
-        </div>
+        
+        {/* O card SÓ é renderizado aqui no PC */}
+        {/* (A variável 'isMobile' agora é recebida pela prop) */}
+        {!isMobile && (
+          <div className={styles.bandContainer}>
+            <App isMobile={false} />
+          </div>
+        )}
       </motion.section>
 
       {/* Seção Sobre */}
@@ -156,30 +181,30 @@ export default function Home() {
           <div className={styles.projectsGrid}>
             {/* Título para projetos de Fullstack */}
             <h3 className={styles.subSectionTitle}>Fullstack</h3>
-<div className={styles.fullstackProjects}>
-  {fullstackProjects.map((project) => (
-    <div
-      key={project.id}
-      className={styles.projectCardFullstack}
-      onClick={() => openModal(project)}
-    >
-      <div className={styles.projectImageContainer}>
-        <img
-          src={project.image}
-          alt={project.title}
-          className={styles.projectImage}
-        />
-        <h3 className={styles.projectTitleFullstack}>{project.title}</h3>
-        <div className={styles.projectIconsFullstack}>
-          {project.icons}
-        </div>
-        <div className={styles.projectOverlayFullstack}>
-          <p className={styles.projectDescription}>{project.description}</p>
-        </div>
-      </div>
-    </div>
-  ))}
-</div>
+            <div className={styles.fullstackProjects}>
+              {fullstackProjects.map((project) => (
+                <div
+                  key={project.id}
+                  className={styles.projectCardFullstack}
+                  onClick={() => openModal(project)}
+                >
+                  <div className={styles.projectImageContainer}>
+                    <img
+                      src={project.image}
+                      alt={project.title}
+                      className={styles.projectImage}
+                    />
+                    <h3 className={styles.projectTitleFullstack}>{project.title}</h3>
+                    <div className={styles.projectIconsFullstack}>
+                      {project.icons}
+                    </div>
+                    <div className={styles.projectOverlayFullstack}>
+                      <p className={styles.projectDescription}>{project.description}</p>
+                    </div>
+                  </div>
+                </div>
+              ))}
+            </div>
             {/* Título para projetos de Front-end */}
             <h3 className={styles.subSectionTitle}>Front-end</h3>
             <div className={styles.frontendProjects}>
@@ -279,6 +304,42 @@ export default function Home() {
       <footer className={styles.footer}>
         <p>&copy; {new Date().getFullYear()} Gabriel Avena. Todos os direitos reservados.</p>
       </footer>
+    </div>
+  );
+}
+
+
+// --- 3. ESTE É O "CÉREBRO" DO LAYOUT ---
+export default function Home() {
+  const isMobile = useIsMobile();
+
+  // Se ainda não sabe o tamanho da tela, não renderiza nada
+  if (isMobile === null) {
+    return null; // Evita "flash" de layout
+  }
+
+  // Se for CELULAR, renderiza o Bloco 1 (Card) + Bloco 2 (Resto)
+  if (isMobile) {
+    return (
+      <div>
+        {/* BLOCO 1 (CELULAR): O card 3D ocupando a tela inteira */}
+        <section className={styles.mobileHeroCardSection}>
+          <App isMobile={true} />
+        </section>
+
+        {/* BLOCO 2 (CELULAR): O resto do seu site */}
+        {/* ▼▼▼ CORREÇÃO AQUI: Passa a prop 'isMobile' ▼▼▼ */}
+        <PageContent isMobile={isMobile} />
+      </div>
+    );
+  }
+
+  // Se for PC, renderiza o layout normal
+  // (O PageContent vai renderizar o card *dentro* do hero)
+  return (
+    <div>
+      {/* ▼▼▼ CORREÇÃO AQUI: Passa a prop 'isMobile' ▼▼▼ */}
+      <PageContent isMobile={isMobile} />
     </div>
   );
 }

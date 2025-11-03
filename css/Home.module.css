@@ -1,4 +1,16 @@
-/* Estilos Gerais */
+/* ARQUIVO: css/Home.module.css (Substitua tudo) */
+
+/* ▼▼▼ CLASSE NOVA ADICIONADA ▼▼▼ */
+.mobileHeroCardSection {
+  height: 100vh; /* Ocupa a primeira tela inteira */
+  width: 100%;
+  background-color: #000;
+  /* O componente App.js será colocado aqui dentro no celular */
+}
+/* ▲▲▲ FIM DA CLASSE NOVA ▲▲▲ */
+
+
+/* Estilos Gerais (Seu código original) */
 .header {
   position: fixed;
   top: 0;
