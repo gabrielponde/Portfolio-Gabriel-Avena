@@ -23,8 +23,7 @@ import {
   SiMercadopago,
   SiVimeo,
   SiZod,
-  SiRadixui,
-  SiSupabase
+  SiRadixui
   } from 'react-icons/si';
   
   import { FaEnvelope, FaWhatsapp, FaLinkedin, FaGithub, FaInstagram, FaJava } from 'react-icons/fa';
@@ -60,6 +59,5 @@ import {
   SiMercadopago,
   SiVimeo,
   SiZod,
-  SiRadixui,
-  SiSupabase
+  SiRadixui
   };
