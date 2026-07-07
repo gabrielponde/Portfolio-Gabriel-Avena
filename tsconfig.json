@@ -12,7 +12,7 @@
     "noEmit": true,
     "esModuleInterop": true,
     "module": "esnext",
-    "moduleResolution": "node", // Alterado para "node"
+    "moduleResolution": "bundler", // Alterado para "node"
     "ignoreDeprecations": "6.0",
     "resolveJsonModule": true,
     "isolatedModules": true,
@@ -35,8 +35,9 @@
     "next-env.d.ts" // Inclui todos os arquivos TSX
     ,
     ".next/types/**/*.ts",
-    ".next/dev/types/**/*.ts"
-, "components/band/App.js"  ],
+    ".next/dev/types/**/*.ts",
+    "components/band/App.js"
+  ],
   "exclude": [
     "node_modules"
   ]

@@ -66,7 +66,7 @@ export const fullstackProjects: Project[] = [
       <icons.SiPostgresql key="postgresql" size={24} title="Postgresql" />,
       <icons.SiSupabase key="supabase" size={24} title="Supabase" />,
       <icons.SiNodedotjs key="nodejs" size={24} title="NodeJs" />,  
-      <icons.SiCss3 key="css3" size={24} title="Css3" />,
+      <icons.SiCss key="css" size={24} title="Css" />,
       <icons.SiFigma key="figma" size={24} title="Figma" />
     ],
   }
@@ -164,7 +164,7 @@ export const frontendProjects: Project[] = [
       <icons.SiNextdotjs key="nextjs" size={24} title="NextJs" />,
       <icons.SiPostgresql key="postgresql" size={24} title="Postgresql" />,
       <icons.SiSupabase key="supabase" size={24} title="Supabase" />,
-      <icons.SiCss3 key="css3" size={24} title="Css3" />,
+      <icons.SiCss key="css" size={24} title="Css" />,
       <icons.SiFigma key="figma" size={24} title="Figma" />
     ],
   },
@@ -179,7 +179,7 @@ export const frontendProjects: Project[] = [
     icons: [
       <icons.SiReact key="react" size={24} title="React" />,
       <icons.SiJavascript key="javascript" size={24} title="JavaScript" />,
-      <icons.SiCss3 key="css" size={24} title="CSS" />,
+      <icons.SiCss key="css" size={24} title="CSS" />,
       <icons.SiFigma key="figma" size={24} title="Figma" />,
     ],
   },
@@ -195,7 +195,7 @@ export const frontendProjects: Project[] = [
       <icons.SiReact key="react" size={24} title="React" />,
       <icons.SiTypescript key="typescript" size={24} title="Typescript" />,
       <icons.SiNextdotjs key="nextjs" size={24} title="NextJs" />,
-      <icons.SiCss3 key="css3" size={24} title="Css3" />,
+      <icons.SiCss key="css" size={24} title="Css" />,
       <icons.SiFigma key="figma" size={24} title="Figma" />
     ],
   },
@@ -210,7 +210,7 @@ export const frontendProjects: Project[] = [
     icons: [
       <icons.SiHtml5 key="html" size={24} title="HTML" />,
       <icons.SiJavascript key="javascript" size={24} title="JavaScript" />,
-      <icons.SiCss3 key="css" size={24} title="CSS" />,
+      <icons.SiCss key="css" size={24} title="CSS" />,
       <icons.SiFigma key="figma" size={24} title="Figma" />,
     ],
   },
@@ -301,7 +301,7 @@ export const skills: Skill[] = [
   },
   {
     name: 'CSS',
-    icon: <icons.SiCss3 size={40} />,
+    icon: <icons.SiCss size={40} />,
     description: 'Linguagem de estilo para design de páginas web.',
   },
   {
