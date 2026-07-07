@@ -39,6 +39,7 @@ export const fullstackProjects: Project[] = [
       <icons.SiTypescript key="typescript" size={24} title="TypeScript" />,
       <icons.SiNodedotjs key="nodejs" size={24} title="Node.js" />,
       <icons.SiPostgresql key="postgresql" size={24} title="PostgreSQL" />,
+      <icons.SiSupabase key="supabase" size={24} title="Supabase" />,
       <icons.SiPrisma key="prisma" size={24} title="Prisma ORM" />,
       <icons.SiTailwindcss key="tailwind" size={24} title="Tailwind CSS" />,
       <icons.SiDocker key="docker" size={24} title="Docker" />,

@@ -17,6 +17,14 @@ import {
     SiSupabase,
     SiFigma,
     SiTailwindcss,
+    SiPrisma,
+  SiDocker,
+  SiSentry,
+  SiMercadopago,
+  SiVimeo,
+  SiZod,
+  SiRadixui,
+  SiSupabase
   } from 'react-icons/si';
   
   import { FaEnvelope, FaWhatsapp, FaLinkedin, FaGithub, FaInstagram, FaJava } from 'react-icons/fa';
@@ -45,5 +53,13 @@ import {
     FaLinkedin,
     FaGithub,
     FaInstagram,
-    FaJava
+    FaJava,
+    SiPrisma,
+  SiDocker,
+  SiSentry,
+  SiMercadopago,
+  SiVimeo,
+  SiZod,
+  SiRadixui,
+  SiSupabase
   };
