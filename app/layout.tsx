@@ -1,4 +1,5 @@
 // app/layout.tsx
+// @ts-ignore: side-effect import of global CSS handled by Next.js
 import '../css/globals.css'
 import type { Metadata } from 'next'
 import { Inter } from 'next/font/google'
@@ -36,9 +37,9 @@ export const metadata: Metadata = {
 
 export default function RootLayout({
   children,
-}: {
+}: Readonly<{
   children: React.ReactNode
-}) {
+}>) {
   return (
     <html lang="pt-BR">
       <body className={inter.className}>{children}</body>
