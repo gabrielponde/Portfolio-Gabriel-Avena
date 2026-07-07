@@ -27,6 +27,31 @@ interface Contact {
 export const fullstackProjects: Project[] = [
   {
     id: 1,
+    title: 'Hexos - Inteligência em Riscos e Fatores Humanos',
+    image: '/images/hexos-preview.png', 
+    description:
+      'Plataforma B2B (HealthTech) completa focada em saúde mental corporativa e gestão de conformidade (NR-1). O ecossistema inclui telepsicologia sob demanda com agendamento inteligente, prontuários, geração de relatórios dinâmicos em PDF, dashboards analíticos para gestão de riscos e integrações com APIs de vídeo e pagamentos. Desenvolvido com foco em segurança (LGPD), alta performance e arquitetura escalável.',
+    repoLink: '',
+    deployLink: 'https://www.usehexos.com.br',
+    icons: [
+      <icons.SiNextdotjs key="nextjs" size={24} title="Next.js 15 (App Router)" />,
+      <icons.SiReact key="react" size={24} title="React 19" />,
+      <icons.SiTypescript key="typescript" size={24} title="TypeScript" />,
+      <icons.SiNodedotjs key="nodejs" size={24} title="Node.js" />,
+      <icons.SiPostgresql key="postgresql" size={24} title="PostgreSQL" />,
+      <icons.SiPrisma key="prisma" size={24} title="Prisma ORM" />,
+      <icons.SiTailwindcss key="tailwind" size={24} title="Tailwind CSS" />,
+      <icons.SiDocker key="docker" size={24} title="Docker" />,
+      <icons.SiSentry key="sentry" size={24} title="Sentry (Performance & Edge)" />,
+      <icons.SiMercadopago key="mercadopago" size={24} title="Mercado Pago API" />,
+      <icons.SiVimeo key="vimeo" size={24} title="Vimeo (Video Hosting)" />,
+      <icons.SiZod key="zod" size={24} title="Zod (Validação)" />,
+      <icons.SiRadixui key="radix" size={24} title="Radix UI" />,
+      <icons.SiFigma key="figma" size={24} title="Figma" />
+    ],
+  },
+  {
+    id: 2,
     title: 'Sale Point',
     image: '/images/sale-point.png',
     description:
