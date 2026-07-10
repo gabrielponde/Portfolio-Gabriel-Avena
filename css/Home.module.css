@@ -2,11 +2,13 @@
 
 /* ▼▼▼ CLASSE NOVA ADICIONADA ▼▼▼ */
 .mobileHeroCardSection {
-  height: 100vh; /* Ocupa a primeira tela inteira */
+  height: 100vh;
+  /* Ocupa a primeira tela inteira */
   width: 100%;
   background-color: #000;
   /* O componente App.js será colocado aqui dentro no celular */
 }
+
 /* ▲▲▲ FIM DA CLASSE NOVA ▲▲▲ */
 
 
@@ -19,7 +21,7 @@
   display: flex;
   justify-content: space-between;
   align-items: center;
-  padding: 1rem 17rem; 
+  padding: 1rem 17rem;
   background-color: rgb(0, 0, 0);
   z-index: 1000;
 }
@@ -30,7 +32,7 @@
   margin-top: 0px;
   height: auto;
   object-fit: contain;
-} 
+}
 
 .nav {
   display: flex;
@@ -72,7 +74,7 @@
 
 /* Estilos para o Botão do Menu */
 .menuButton {
-  display: none; 
+  display: none;
   background: none;
   border: none;
   cursor: pointer;
@@ -89,12 +91,13 @@
   justify-content: space-between;
   width: 24px;
   height: 18px;
-  position: relative; 
+  position: relative;
 }
 
 .menuIcon .line {
   width: 100%;
-  height: 1px; /* Reduzi de 2px para 1px */
+  height: 1px;
+  /* Reduzi de 2px para 1px */
   background-color: white;
   transition: transform 0.3s ease, opacity 0.3s ease;
   transform-origin: center;
@@ -112,7 +115,7 @@
 
 .menuIcon .line:nth-child(2) {
   top: 50%;
-  transform: translateY(-50%); 
+  transform: translateY(-50%);
 }
 
 /* Transformação para "X" */
@@ -121,7 +124,7 @@
 }
 
 .menuIconActive .line:nth-child(2) {
-  opacity: 0; 
+  opacity: 0;
 }
 
 .menuIconActive .line:nth-child(3) {
@@ -147,7 +150,7 @@
   text-align: left;
   background-color: black;
   color: white;
-  padding: 3rem 16rem; 
+  padding: 3rem 16rem;
 }
 
 .heroContent {
@@ -248,8 +251,10 @@
 }
 
 .react-typed-cursor {
-  color: blue; /* Altere a cor conforme necessário */
-  font-size: 2rem; /* Ajuste o tamanho do cursor */
+  color: blue;
+  /* Altere a cor conforme necessário */
+  font-size: 2rem;
+  /* Ajuste o tamanho do cursor */
 }
 
 .skillsGrid {
@@ -298,7 +303,8 @@
 .projectsGrid {
   display: flex;
   flex-direction: column;
-  gap: 32px; /* Espaçamento entre as seções de front-end, fullstack e back-end */
+  gap: 32px;
+  /* Espaçamento entre as seções de front-end, fullstack e back-end */
 }
 
 .frontendProjects,
@@ -306,8 +312,10 @@
 .backendProjects {
   display: flex;
   flex-wrap: wrap;
-  gap: 16px; /* Espaçamento entre os cards */
-  justify-content: flex-start; /* Alinha os cards à esquerda */
+  gap: 16px;
+  /* Espaçamento entre os cards */
+  justify-content: flex-start;
+  /* Alinha os cards à esquerda */
 }
 
 /* Estilo para os cards de fullstack */
@@ -331,23 +339,31 @@
   position: absolute;
   top: 40%;
   left: 50%;
-  transform: translate(-50%, -50%); /* Centraliza o título */
-  color: rgba(255, 255, 255, 0.793); 
+  transform: translate(-50%, -50%);
+  /* Centraliza o título */
+  color: rgba(255, 255, 255, 0.793);
   font-size: 1.5rem;
   font-weight: bold;
-  text-shadow: 
-    2px 2px 4px rgba(0, 0, 0, 0.8), /* Sombra mais escura */
-    -2px -2px 4px rgba(0, 0, 0, 0.8); /* Sombra adicional para contraste */
-  margin: 0; /* Remove margens padrão do h3 */
-  z-index: 2; /* Garante que o título fique acima da imagem */
-  text-align: center; /* Centraliza o texto */
-  opacity: 1; /* Título completamente visível */
-  transition: opacity 0.3s ease, visibility 0.3s ease; /* Adiciona transição suave */
+  text-shadow:
+    2px 2px 4px rgba(0, 0, 0, 0.8),
+    /* Sombra mais escura */
+    -2px -2px 4px rgba(0, 0, 0, 0.8);
+  /* Sombra adicional para contraste */
+  margin: 0;
+  /* Remove margens padrão do h3 */
+  z-index: 2;
+  /* Garante que o título fique acima da imagem */
+  text-align: center;
+  /* Centraliza o texto */
+  opacity: 1;
+  /* Título completamente visível */
+  transition: opacity 0.3s ease, visibility 0.3s ease;
+  /* Adiciona transição suave */
 }
 
 .projectIconsFullstack {
   position: absolute;
-  top: calc(40% + 40px); 
+  top: calc(40% + 40px);
   left: 0;
   right: 0;
   display: flex;
@@ -356,13 +372,19 @@
   z-index: 2;
   opacity: 1;
   transition: opacity 0.3s ease;
-  padding: 10px; /* Adiciona espaço interno */
+  padding: 10px;
+  /* Adiciona espaço interno */
   flex-wrap: wrap;
-  background: rgba(0, 0, 0, 0.7); /* Fundo preto semi-transparente */
-  border-radius: 8px; /* Borda arredondada */
-  width: fit-content; /* Largura conforme conteúdo */
-  margin: 0 auto; /* Centraliza horizontalmente */
-  max-width: 90%; /* Limita a largura máxima */
+  background: rgba(0, 0, 0, 0.7);
+  /* Fundo preto semi-transparente */
+  border-radius: 8px;
+  /* Borda arredondada */
+  width: fit-content;
+  /* Largura conforme conteúdo */
+  margin: 0 auto;
+  /* Centraliza horizontalmente */
+  max-width: 90%;
+  /* Limita a largura máxima */
 }
 
 .projectCardFullstack .projectImage {
@@ -388,12 +410,15 @@
 .projectCardFullstack:hover {
   transform: scale(1.1);
   filter: brightness(1);
-  opacity: 1; /* Opacidade ao passar o mouse */
-  z-index: 2; /* Z-index maior para o card hovered */
+  opacity: 1;
+  /* Opacidade ao passar o mouse */
+  z-index: 2;
+  /* Z-index maior para o card hovered */
 }
 
 .projectCardFullstack {
-  transform-origin: center; /* Garante que o zoom seja centralizado */
+  transform-origin: center;
+  /* Garante que o zoom seja centralizado */
 }
 
 .projectCardFullstack:hover .projectImage {
@@ -402,7 +427,8 @@
 
 .projectCardFullstack:hover .projectTitleFullstack,
 .projectCardFullstack:hover .projectIconsFullstack {
-  opacity: 0; /* Torna o título invisível ao passar o mouse */
+  opacity: 0;
+  /* Torna o título invisível ao passar o mouse */
   visibility: hidden;
 }
 
@@ -417,23 +443,30 @@
 /* Estilo para os cards de front-end */
 .projectCardFront {
   position: relative;
-  width: calc(50% - 8px); /* Largura fixa para dois cards lado a lado */
-  max-width: 500px; /* Largura máxima */
-  height: 300px; /* Altura fixa */
+  width: calc(50% - 8px);
+  /* Largura fixa para dois cards lado a lado */
+  max-width: 500px;
+  /* Largura máxima */
+  height: 300px;
+  /* Altura fixa */
   overflow: hidden;
   border-radius: 8px;
   box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
   transition: transform 0.3s ease, filter 0.3s ease, opacity 0.3s ease;
   cursor: pointer;
-  opacity: 0.7; /* Opacidade inicial */
-  z-index: 1; /* Z-index inicial para todos os cards */
+  opacity: 0.7;
+  /* Opacidade inicial */
+  z-index: 1;
+  /* Z-index inicial para todos os cards */
 }
 
 .projectCardFront:hover {
   transform: scale(1.1);
   filter: brightness(1);
-  opacity: 1; /* Opacidade ao passar o mouse */
-  z-index: 2; /* Z-index maior para o card hovered */
+  opacity: 1;
+  /* Opacidade ao passar o mouse */
+  z-index: 2;
+  /* Z-index maior para o card hovered */
 }
 
 .projectImageContainer {
@@ -441,61 +474,84 @@
   width: 100%;
   height: 100%;
   display: flex;
-  justify-content: center; /* Centraliza horizontalmente */
-  align-items: center; /* Centraliza verticalmente */
+  justify-content: center;
+  /* Centraliza horizontalmente */
+  align-items: center;
+  /* Centraliza verticalmente */
 }
 
 .projectImage {
   width: 100%;
   height: 100%;
   object-fit: cover;
-  opacity: 0.5; /* Reduz a opacidade da imagem */
+  opacity: 0.5;
+  /* Reduz a opacidade da imagem */
   transition: transform 0.3s ease, opacity 0.3s ease;
 }
 
 .projectCardFront:hover .projectImage {
-  opacity: 1; /* Torna a imagem totalmente visível ao passar o mouse */
+  opacity: 1;
+  /* Torna a imagem totalmente visível ao passar o mouse */
 }
 
 .projectCardFront .projectTitle {
   position: absolute;
-  top: 50%; /* Posiciona o título no centro vertical */
-  left: 50%; /* Posiciona o título no centro horizontal */
-  transform: translate(-50%, -50%); /* Centraliza o título */
-  color: #ffffff; /* Cor do texto */
+  top: 50%;
+  /* Posiciona o título no centro vertical */
+  left: 50%;
+  /* Posiciona o título no centro horizontal */
+  transform: translate(-50%, -50%);
+  /* Centraliza o título */
+  color: #ffffff;
+  /* Cor do texto */
   font-size: 1.5rem;
   font-weight: bold;
-  text-shadow: 
-    2px 2px 4px rgba(0, 0, 0, 0.8), /* Sombra mais escura */
-    -2px -2px 4px rgba(0, 0, 0, 0.8); /* Sombra adicional para contraste */
-  margin: 0; /* Remove margens padrão do h3 */
-  z-index: 2; /* Garante que o título fique acima da imagem */
-  text-align: center; /* Centraliza o texto */
-  opacity: 1; /* Título completamente visível */
-  transition: opacity 0.3s ease, visibility 0.3s ease; /* Adiciona transição suave */
+  text-shadow:
+    2px 2px 4px rgba(0, 0, 0, 0.8),
+    /* Sombra mais escura */
+    -2px -2px 4px rgba(0, 0, 0, 0.8);
+  /* Sombra adicional para contraste */
+  margin: 0;
+  /* Remove margens padrão do h3 */
+  z-index: 2;
+  /* Garante que o título fique acima da imagem */
+  text-align: center;
+  /* Centraliza o texto */
+  opacity: 1;
+  /* Título completamente visível */
+  transition: opacity 0.3s ease, visibility 0.3s ease;
+  /* Adiciona transição suave */
 }
 
 .projectCardFront:hover .projectTitle {
-  opacity: 0; /* Torna o título invisível ao passar o mouse */
+  opacity: 0;
+  /* Torna o título invisível ao passar o mouse */
   visibility: hidden;
 }
 
 .projectIcons {
   position: absolute;
-  bottom: 70px; /* Posiciona os ícones na parte inferior */
-  left: 50%; /* Centraliza horizontalmente */
-  transform: translateX(-50%); /* Ajusta o posicionamento horizontal */
+  bottom: 70px;
+  /* Posiciona os ícones na parte inferior */
+  left: 50%;
+  /* Centraliza horizontalmente */
+  transform: translateX(-50%);
+  /* Ajusta o posicionamento horizontal */
   display: flex;
   gap: 8px;
-  background: rgba(0, 0, 0, 0.8); /* Fundo mais escuro e mais opaco */
+  background: rgba(0, 0, 0, 0.8);
+  /* Fundo mais escuro e mais opaco */
   padding: 8px;
   border-radius: 8px;
-  z-index: 2; /* Garante que os ícones fiquem acima da imagem */
-  transition: opacity 0.3s ease, visibility 0.3s ease; /* Adiciona transição suave */
+  z-index: 2;
+  /* Garante que os ícones fiquem acima da imagem */
+  transition: opacity 0.3s ease, visibility 0.3s ease;
+  /* Adiciona transição suave */
 }
 
 .projectCardFront:hover .projectIcons {
-  opacity: 0; /* Torna os ícones invisíveis ao passar o mouse */
+  opacity: 0;
+  /* Torna os ícones invisíveis ao passar o mouse */
   visibility: hidden;
 }
 
@@ -505,13 +561,17 @@
   left: 0;
   width: 100%;
   height: 100%;
-  background: rgba(0, 0, 0, 0.6); /* Fundo semi-transparente */
+  background: rgba(0, 0, 0, 0.6);
+  /* Fundo semi-transparente */
   color: white;
   display: flex;
   flex-direction: column;
-  justify-content: center; /* Centraliza verticalmente */
-  align-items: center; /* Centraliza horizontalmente */
-  opacity: 0; /* Inicialmente invisível */
+  justify-content: center;
+  /* Centraliza verticalmente */
+  align-items: center;
+  /* Centraliza horizontalmente */
+  opacity: 0;
+  /* Inicialmente invisível */
   transition: opacity 0.3s ease;
   padding: 16px;
   text-align: center;
@@ -519,19 +579,23 @@
 }
 
 .projectCardFront:hover .projectOverlay {
-  opacity: 0; /* Exibe o overlay ao passar o mouse */
+  opacity: 0;
+  /* Exibe o overlay ao passar o mouse */
 }
 
 .projectDescription {
   font-size: 0.9rem;
   margin-bottom: 16px;
-  line-height: 1.5; /* Melhora a legibilidade do texto */
-  opacity: 0; /* Remove o texto da descrição */
+  line-height: 1.5;
+  /* Melhora a legibilidade do texto */
+  opacity: 0;
+  /* Remove o texto da descrição */
   transition: opacity 0.3s ease;
 }
 
 .projectCardFront:hover .projectDescription {
-  opacity: 0; /* Mantém o texto invisível */
+  opacity: 0;
+  /* Mantém o texto invisível */
 }
 
 .projectLink {
@@ -542,11 +606,16 @@
   padding: 8px 16px;
   border-radius: 4px;
   transition: background 0.3s ease, color 0.3s ease;
-  z-index: 3; /* Garante que o botão fique acima de tudo */
-  position: absolute; /* Posiciona o botão absolutamente */
-  bottom: 20px; /* Distância do fundo */
-  left: 40%; /* Ajusta a posição horizontal */
-  transform: translateX(-50%); /* Centraliza o botão */
+  z-index: 3;
+  /* Garante que o botão fique acima de tudo */
+  position: absolute;
+  /* Posiciona o botão absolutamente */
+  bottom: 20px;
+  /* Distância do fundo */
+  left: 40%;
+  /* Ajusta a posição horizontal */
+  transform: translateX(-50%);
+  /* Centraliza o botão */
 }
 
 .projectLink:hover {
@@ -556,16 +625,20 @@
 
 /* Estilo para os cards de back-end */
 .projectCardBack {
-  background: #1a1a1a; /* Fundo escuro */
+  background: #1a1a1a;
+  /* Fundo escuro */
   padding: 20px;
   border-radius: 8px;
   box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
   transition: transform 0.3s ease, box-shadow 0.3s ease;
   display: flex;
   flex-direction: column;
-  align-items: center; /* Centraliza o conteúdo horizontalmente */
-  height: auto; /* Altura automática para se ajustar ao conteúdo */
-  width: 100%; /* Ocupa 100% da largura */
+  align-items: center;
+  /* Centraliza o conteúdo horizontalmente */
+  height: auto;
+  /* Altura automática para se ajustar ao conteúdo */
+  width: 100%;
+  /* Ocupa 100% da largura */
   cursor: pointer;
   position: relative;
 }
@@ -577,10 +650,13 @@
 
 .projectCardBack .projectTitle {
   font-size: 1.5rem;
-  margin-bottom: 10px; /* Espaçamento abaixo do título */
+  margin-bottom: 10px;
+  /* Espaçamento abaixo do título */
   color: rgb(122, 122, 122);
-  text-align: center; /* Centraliza o texto */
-  width: 100%; /* Ocupa 100% da largura do card */
+  text-align: center;
+  /* Centraliza o texto */
+  width: 100%;
+  /* Ocupa 100% da largura do card */
 }
 
 .projectCardBack .projectText {
@@ -588,27 +664,28 @@
   color: rgb(122, 122, 122);
   margin-top: 80px;
   transition: color 0.3s ease;
-  text-align: center; /* Centraliza o texto */
+  text-align: center;
+  /* Centraliza o texto */
 }
 
 .projectCardBack .projectLink {
-    padding: 10px 20px;
-    text-transform: uppercase;
-    border-radius: 8px;
-    font-size: 17px;
-    font-weight: 500;
-    color: #0037ff;
-    text-shadow: none;
-    background: transparent;
-    cursor: pointer;
-    box-shadow: transparent;
-    border: 1px solid #0037ff;
-    transition: 0.5s ease;
-    user-select: none;
-    text-align: center;
-    margin-top: auto;
-  }
-  
+  padding: 10px 20px;
+  text-transform: uppercase;
+  border-radius: 8px;
+  font-size: 17px;
+  font-weight: 500;
+  color: #0037ff;
+  text-shadow: none;
+  background: transparent;
+  cursor: pointer;
+  box-shadow: transparent;
+  border: 1px solid #0037ff;
+  transition: 0.5s ease;
+  user-select: none;
+  text-align: center;
+  margin-top: auto;
+}
+
 
 .projectCardBack .projectLink:hover,
 .projectCardBack .projectLink:focus {
@@ -626,14 +703,15 @@
   left: 0;
   width: 100%;
   height: 100%;
-  background: rgba(0, 0, 0, 0.8); /* Fundo escuro semi-transparente */
-  display: flex;
-  justify-content: center;
-  align-items: center;
+  background: rgba(0, 0, 0, 0.8);
+  /* Fundo escuro semi-transparente */
+  display: block;
+  overflow-y: auto;
   z-index: 1000;
   opacity: 0;
   visibility: hidden;
   transition: opacity 0.3s ease, visibility 0.3s ease;
+  padding: 16px 0;
 }
 
 .modal.open {
@@ -645,12 +723,15 @@
   background: rgb(186, 185, 185);
   padding: 20px;
   border-radius: 8px;
-  max-width: 800px; /* Aumentei a largura máxima */
+  max-width: 800px;
+  /* Aumentei a largura máxima */
   width: 90%;
+  margin: 2rem auto;
   position: relative;
   display: flex;
   flex-direction: column;
   gap: 16px;
+  box-sizing: border-box;
 }
 
 .modalContent h3 {
@@ -661,8 +742,10 @@
 
 .modalContent .projectImage {
   width: 100%;
-  max-height: 400px; /* Altura máxima da imagem */
-  object-fit: contain; /* Alterado para "contain" para evitar cortes */
+  max-height: 400px;
+  /* Altura máxima da imagem */
+  object-fit: contain;
+  /* Alterado para "contain" para evitar cortes */
   border-radius: 8px;
   opacity: 1;
 }
@@ -753,24 +836,24 @@
 /* Estilos para o Nav em Telas Pequenas */
 @media (max-width: 768px) {
   .header {
-    flex-direction: row; 
+    flex-direction: row;
     align-items: center;
     padding: 1rem;
   }
 
   .menuButton {
-    display: block; 
+    display: block;
   }
 
   .nav {
-    display: none; 
+    display: none;
     flex-direction: column;
-    position: fixed; 
+    position: fixed;
     top: 0;
     left: 0;
-    width: 100%; 
+    width: 100%;
     height: 100vh;
-    background-color: rgba(0, 0, 0, 0.9); 
+    background-color: rgba(0, 0, 0, 0.9);
     justify-content: center;
     align-items: center;
     z-index: 1000;
@@ -779,18 +862,18 @@
   }
 
   .navOpen {
-    display: flex; 
+    display: flex;
   }
 
   .navLink {
-    margin: 1rem 0; 
-    font-size: 1.5rem; 
-    color: rgb(122, 122, 122); 
+    margin: 1rem 0;
+    font-size: 1.5rem;
+    color: rgb(122, 122, 122);
     text-decoration: none;
   }
 
   .navLink:hover {
-    color: #ffffff; 
+    color: #ffffff;
   }
 
   .headerName {
@@ -807,12 +890,12 @@
     height: 100vh;
     padding: 2rem 1rem;
   }
-  
+
   .heroTitle {
     font-size: 1.8rem;
     margin-bottom: 1rem;
   }
-  
+
   .heroSubtitle {
     font-size: 0.9rem;
   }
@@ -845,59 +928,75 @@
 
   .projectCardFront,
   .backendProjects {
-    flex-direction: column; /* Empilha os cards verticalmente */
-    gap: 16px; /* Espaçamento entre os cards */
+    flex-direction: column;
+    /* Empilha os cards verticalmente */
+    gap: 16px;
+    /* Espaçamento entre os cards */
   }
 
   .projectCardFront,
-  .projectCardBack {
-    width: 100%; /* Cards ocupam 100% da largura */
-    height: 250px; /* Altura fixa para os cards */
-    margin-bottom: 16px; /* Espaçamento entre os cards */
-  }
-  .projectCardBack {
-    width: 100%; /* Cards ocupam 100% da largura */
-    height: auto; /* Altura automática para se ajustar ao conteúdo */
-    margin: 0 16px 16px 0px; /* Margens: topo 0, direita 16px, inferior 16px, esquerda 16px */
-    padding: 15px; /* Padding interno reduzido */
-    box-sizing: border-box; /* Inclui padding e bordas no cálculo da largura */
+  .projectCardBack,
+  .projectCardFullstack {
+    width: 100%;
+    margin: 0 0 16px 0;
+    box-sizing: border-box;
   }
 
-  .projectCardFront
-  .projectCardBack
-  .projectTitle {
-    font-size: 1.2rem; /* Reduz o tamanho do texto em telas pequenas */
+  .projectCardFront {
+    height: 250px;
+    /* Altura fixa para os cards */
+  }
+
+  .projectCardBack {
+    height: auto;
+    /* Altura automática para se ajustar ao conteúdo */
+    padding: 15px;
+    /* Padding interno reduzido */
+  }
+
+  .projectCardFront .projectCardBack .projectTitle {
+    font-size: 1.2rem;
+    /* Reduz o tamanho do texto em telas pequenas */
   }
 
   .projectCardFront .projectText,
   .projectCardBack .projectText {
-    font-size: 0.9rem; /* Reduz o tamanho do texto */
-    margin-top: 60px; /* Ajusta a margem superior */
+    font-size: 0.9rem;
+    /* Reduz o tamanho do texto */
+    margin-top: 60px;
+    /* Ajusta a margem superior */
   }
 
   .projectCardFront .projectLink,
   .projectCardBack .projectLink {
-    font-size: 0.8rem; /* Reduz o tamanho do texto do botão */
-    padding: 8px 16px; /* Ajusta o padding do botão */
-    bottom: 10px; /* Ajusta a posição do botão */
+    font-size: 0.8rem;
+    /* Reduz o tamanho do texto do botão */
+    padding: 8px 16px;
+    /* Ajusta o padding do botão */
+    bottom: 10px;
+    /* Ajusta a posição do botão */
   }
 
   .projectIcons {
-    bottom: 50px; /* Ajusta a posição dos ícones */
+    bottom: 50px;
+    /* Ajusta a posição dos ícones */
   }
 
   .projectOverlay {
-    padding: 10px; /* Reduz o padding do overlay */
+    padding: 10px;
+    /* Reduz o padding do overlay */
   }
 
   .projectDescription {
-    font-size: 0.8rem; /* Reduz o tamanho da descrição */
+    font-size: 0.8rem;
+    /* Reduz o tamanho da descrição */
   }
 
   .projectCardFullstack {
-    border-radius: 8px; 
+    border-radius: 8px;
     width: 100%;
-    height: 250px; /* Mesma altura dos frontend em mobile */
+    height: 250px;
+    /* Mesma altura dos frontend em mobile */
     min-height: auto;
     max-height: none;
   }
@@ -908,28 +1007,35 @@
     top: 50%;
     left: 50%;
     transform: translate(-50%, -50%);
-    font-size: 1.5rem; /* Tamanho igual */
+    font-size: 1.5rem;
+    /* Tamanho igual */
     width: 90%;
     padding: 0;
     text-align: center;
   }
 
   .projectCardFullstack {
-    margin: 30px 0; /* Aumenta a margem para acomodar o zoom */
+    margin: 30px 0;
+    /* Aumenta a margem para acomodar o zoom */
   }
 
   /* Ícones igual ao frontend */
   .projectCardFullstack .projectIconsFullstack {
     position: absolute;
-    bottom: 90px; /* Mesma posição */
+    bottom: 90px;
+    /* Mesma posição */
     display: flex;
     gap: 8px;
-    background: rgba(0, 0, 0, 0.8); /* Mesmo fundo */
+    background: rgba(0, 0, 0, 0.8);
+    /* Mesmo fundo */
     padding: 8px;
-    width: auto;
+    left: 10px;
+    right: 10px;
     flex-wrap: nowrap;
-    overflow-x: auto; /* Para muitos ícones */
-    top: auto; /* Remove o posicionamento por top */
+    overflow-x: auto;
+    /* Para muitos ícones */
+    top: auto;
+    /* Remove o posicionamento por top */
   }
 
   /* Remove hover effects em mobile se necessário */
@@ -981,17 +1087,18 @@
   .projectsGrid {
     grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
   }
+
   .projectCardFullstack {
     height: 60vh;
     max-height: 500px;
     min-height: 350px;
   }
-  
+
   .projectTitleFullstack {
     font-size: 1.8rem;
     top: 25%;
   }
-  
+
   .projectIconsFullstack {
     top: calc(25% + 45px);
     padding: 8px;
@@ -1007,28 +1114,53 @@
   }
 
   .projectCardFullstack {
-    border-radius: 8px; 
+    border-radius: 8px;
     height: 40vh;
     max-height: 350px;
     min-height: 250px;
     font-size: 1rem;
-    bottom: 60px;
     padding: 6px;
     gap: 6px;
+    width: 100%;
+    margin: 0 0 16px 0;
+    box-sizing: border-box;
   }
-  
+
   .projectTitleFullstack {
     font-size: 1.2rem;
     top: 15%;
   }
-  
+
   .projectIconsFullstack {
     bottom: 60px;
     padding: 5px;
     gap: 8px;
+    left: 8px;
+    right: 8px;
   }
-  
+
   .fullstackProjects {
     gap: 12px;
+  }
+
+  .modalContent {
+    padding: 16px;
+    gap: 12px;
+    margin: 1rem auto;
+  }
+
+  .modalContent h3 {
+    font-size: 1.4rem;
+    margin-bottom: 8px;
+    padding-right: 24px;
+  }
+
+  .modalContent .projectImage {
+    max-height: 200px;
+  }
+
+  .modalContent p {
+    font-size: 0.9rem;
+    margin-bottom: 8px;
   }
 }

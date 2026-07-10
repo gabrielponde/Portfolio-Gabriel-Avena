@@ -109,8 +109,8 @@ function PageContent({ isMobile }: { isMobile: boolean | null }) {
             )}
           </div>
           <a
-            href="./curriculo/Currículo - Gabriel Avena.pdf"
-            download="Currículo - Gabriel Avena.pdf"
+            href="/curriculo/Currículo Gabriel Avena.pdf"
+            download="Currículo Gabriel Avena.pdf"
             type="application/pdf"
             className={styles.heroButton}
           >

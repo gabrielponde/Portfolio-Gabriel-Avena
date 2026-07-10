@@ -30,7 +30,7 @@ export const fullstackProjects: Project[] = [
     title: 'Hexos - Inteligência em Riscos e Fatores Humanos',
     image: '/images/hexos-preview.png', 
     description:
-      'Plataforma B2B (HealthTech) completa focada em saúde mental corporativa e gestão de conformidade (NR-1). O ecossistema inclui telepsicologia sob demanda com agendamento inteligente, prontuários, geração de relatórios dinâmicos em PDF, dashboards analíticos para gestão de riscos e integrações com APIs de vídeo e pagamentos. Desenvolvido com foco em segurança (LGPD), alta performance e arquitetura escalável.',
+      'Plataforma B2B (HealthTech) completa, focada em saúde mental corporativa e gestão de conformidade (NR-1). O ecossistema inclui telepsicologia sob demanda com agendamento inteligente, prontuários, geração de relatórios dinâmicos em PDF, dashboards analíticos para gestão de riscos e integrações com APIs de vídeo e pagamentos. Desenvolvido com foco em segurança (LGPD), alta performance e arquitetura escalável.',
     repoLink: '',
     deployLink: 'https://www.usehexos.com.br',
     icons: [
