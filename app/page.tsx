@@ -109,15 +109,15 @@ function PageContent({ isMobile }: { isMobile: boolean | null }) {
             )}
           </div>
           <a
-            href="/curriculo/Currículo Gabriel Avena.pdf"
-            download="Currículo Gabriel Avena.pdf"
+            href="/curriculo/Curriculo_Gabriel_Avena.pdf"
+            download="Curriculo_Gabriel_Avena.pdf"
             type="application/pdf"
             className={styles.heroButton}
           >
             Baixar Currículo
           </a>
         </div>
-        
+
         {/* O card SÓ é renderizado aqui no PC */}
         {/* (A variável 'isMobile' agora é recebida pela prop) */}
         {!isMobile && (
