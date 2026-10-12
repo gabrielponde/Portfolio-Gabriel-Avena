@@ -17,6 +17,7 @@
     "@tailwindcss/postcss": "latest",
     "@types/three": "latest",
     "framer-motion": "^12.4.12",
+    "lucide-react": "^1.55.0",
     "next": "latest",
     "react": "^19.0.0",
     "react-dom": "^19.0.0",

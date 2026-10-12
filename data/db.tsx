@@ -27,8 +27,8 @@ interface Contact {
 export const fullstackProjects: Project[] = [
   {
     id: 1,
-    title: 'Hexos - Inteligência em Riscos e Fatores Humanos',
-    image: '/images/hexos-preview.png', 
+    title: 'Hexos - Inteligência em Fatores Humanos, Saúde Mental e Educação',
+    image: '/images/hexos-preview.png',
     description:
       'Plataforma B2B (HealthTech) completa, focada em saúde mental corporativa e gestão de conformidade (NR-1). O ecossistema inclui telepsicologia sob demanda com agendamento inteligente, prontuários, geração de relatórios dinâmicos em PDF, dashboards analíticos para gestão de riscos e integrações com APIs de vídeo e pagamentos. Desenvolvido com foco em segurança (LGPD), alta performance e arquitetura escalável.',
     repoLink: '',
@@ -65,7 +65,7 @@ export const fullstackProjects: Project[] = [
       <icons.SiNextdotjs key="nextjs" size={24} title="NextJs" />,
       <icons.SiPostgresql key="postgresql" size={24} title="Postgresql" />,
       <icons.SiSupabase key="supabase" size={24} title="Supabase" />,
-      <icons.SiNodedotjs key="nodejs" size={24} title="NodeJs" />,  
+      <icons.SiNodedotjs key="nodejs" size={24} title="NodeJs" />,
       <icons.SiCss key="css" size={24} title="Css" />,
       <icons.SiFigma key="figma" size={24} title="Figma" />
     ],
@@ -223,6 +223,12 @@ export const backendProjects: Project[] = [
     description:
       'BankAPI é uma API RESTful educativa que simula operações bancárias básicas. Projetada para desenvolvedores, oferece uma plataforma segura e intuitiva para treinar habilidades em APIs financeiras, com documentação clara e foco em aprendizado prático.',
     repoLink: 'https://github.com/gabrielponde/BankAPI',
+    icons: [
+      <icons.SiNodedotjs key="nodejs" size={24} title="Node.js" />,
+      <icons.SiJavascript key="javascript" size={24} title="JavaScript" />,
+      <icons.SiPostgresql key="postgresql" size={24} title="PostgreSQL" />,
+      <icons.SiGit key="git" size={24} title="Git" />
+    ],
   },
   {
     id: 2,
@@ -230,6 +236,12 @@ export const backendProjects: Project[] = [
     description:
       'Desenvolvimento de uma API RESTful para um sistema de Ponto de Venda (PDV), com funcionalidades de gerenciamento de usuários, produtos, categorias, clientes e pedidos. A API permite operações CRUD (Create, Read, Update, Delete) para otimizar processos comerciais e garantir eficiência nas operações.',
     repoLink: 'https://github.com/gabrielponde/Ponto-de-Venda',
+    icons: [
+      <icons.SiNodedotjs key="nodejs" size={24} title="Node.js" />,
+      <icons.SiTypescript key="typescript" size={24} title="TypeScript" />,
+      <icons.SiPostgresql key="postgresql" size={24} title="PostgreSQL" />,
+      <icons.SiGit key="git" size={24} title="Git" />
+    ],
   },
 ];
 

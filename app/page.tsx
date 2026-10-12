@@ -9,6 +9,7 @@ import Link from 'next/link';
 import styles from '../css/Home.module.css';
 import { Project, frontendProjects, backendProjects, skills, contacts, fullstackProjects } from '../data/db';
 import App from '../components/band/App';
+import ProjectCarousel from '../components/ProjectCarousel';
 
 // --- 1. HOOK 'useIsMobile' ---
 // (Detecta o tamanho da tela de forma segura no Next.js)
@@ -155,7 +156,9 @@ function PageContent({ isMobile }: { isMobile: boolean | null }) {
       >
         <div className={styles.container}>
           <h2 className={styles.sectionTitle}>Conhecimentos</h2>
-          <div className={styles.skillInfo}>{skillInfo && <p>{skillInfo}</p>}</div>
+          <div className={styles.skillInfo}>
+            <p>{skillInfo || ''}</p>
+          </div>
           <div className={styles.skillsGrid}>
             {skills.map((skill, index) => (
               <div key={index} className={styles.skillItem} onMouseEnter={() => handleSkillHover(skill.description)} onMouseLeave={handleSkillLeave}>
@@ -167,86 +170,18 @@ function PageContent({ isMobile }: { isMobile: boolean | null }) {
         </div>
       </motion.section>
 
-      {/* Seção Projetos */}
+      {/* Seção Projetos (Carrossel Moderno) */}
       <motion.section
         id="projetos"
         className={styles.section}
-        initial={{ opacity: 0, x: -200 }}
-        whileInView={{ opacity: 1, x: 0 }}
-        transition={{ duration: 0.5 }}
+        initial={{ opacity: 0, y: 30 }}
+        whileInView={{ opacity: 1, y: 0 }}
+        transition={{ duration: 0.6 }}
         viewport={{ once: false }}
       >
-        <div className={styles.container}>
+        <div style={{ width: '100%', maxWidth: '1360px', margin: '0 auto', textAlign: 'center', padding: '0 1rem' }}>
           <h2 className={styles.sectionTitle}>Projetos</h2>
-          <div className={styles.projectsGrid}>
-            {/* Título para projetos de Fullstack */}
-            <h3 className={styles.subSectionTitle}>Fullstack</h3>
-            <div className={styles.fullstackProjects}>
-              {fullstackProjects.map((project) => (
-                <div
-                  key={project.id}
-                  className={styles.projectCardFullstack}
-                  onClick={() => openModal(project)}
-                >
-                  <div className={styles.projectImageContainer}>
-                    <img
-                      src={project.image}
-                      alt={project.title}
-                      className={styles.projectImage}
-                    />
-                    <h3 className={styles.projectTitleFullstack}>{project.title}</h3>
-                    <div className={styles.projectIconsFullstack}>
-                      {project.icons}
-                    </div>
-                    <div className={styles.projectOverlayFullstack}>
-                      <p className={styles.projectDescription}>{project.description}</p>
-                    </div>
-                  </div>
-                </div>
-              ))}
-            </div>
-            {/* Título para projetos de Front-end */}
-            <h3 className={styles.subSectionTitle}>Front-end</h3>
-            <div className={styles.frontendProjects}>
-              {frontendProjects.map((project) => (
-                <div
-                  key={project.id}
-                  className={styles.projectCardFront}
-                  onClick={() => openModal(project)}
-                >
-                  <div className={styles.projectImageContainer}>
-                    <img
-                      src={project.image}
-                      alt={project.title}
-                      className={styles.projectImage}
-                    />
-                    <h3 className={styles.projectTitle}>{project.title}</h3>
-                    <div className={styles.projectIcons}>
-                      {project.icons}
-                    </div>
-                    <div className={styles.projectOverlay}>
-                      <p className={styles.projectDescription}>{project.description}</p>
-                    </div>
-                  </div>
-                </div>
-              ))}
-            </div>
-
-            {/* Título para projetos de Back-end */}
-            <h3 className={styles.subSectionTitle}>Back-end</h3>
-            <div className={styles.backendProjects}>
-              {backendProjects.map((project) => (
-                <div
-                  key={project.id}
-                  className={styles.projectCardBack}
-                  onClick={() => openModal(project)}
-                >
-                  <h3 className={styles.projectTitle}>{project.title}</h3>
-                  <p className={styles.projectText}>{project.description}</p>
-                </div>
-              ))}
-            </div>
-          </div>
+          <ProjectCarousel onSelectProject={openModal} />
         </div>
       </motion.section>
 
@@ -267,9 +202,11 @@ function PageContent({ isMobile }: { isMobile: boolean | null }) {
             )}
             <p>{selectedProject.description}</p>
             <div className={styles.projectLinks}>
-              <a href={selectedProject.repoLink} target="_blank" rel="noopener noreferrer">
-                Repositório
-              </a>
+              {selectedProject.repoLink && (
+                <a href={selectedProject.repoLink} target="_blank" rel="noopener noreferrer">
+                  Repositório
+                </a>
+              )}
               {selectedProject.deployLink && (
                 <a href={selectedProject.deployLink} target="_blank" rel="noopener noreferrer">
                   Acessar Projeto
